@@ -33,8 +33,7 @@ An intelligent framework for automating price extraction from UPrinting products
    ```
 
 3. **Configure environment**:
-   - Edit `.env` file with your settings
-   - Add AI API keys (optional but recommended)
+
    - Update CSV file path
 
 4. **Start the framework**:
@@ -44,31 +43,6 @@ An intelligent framework for automating price extraction from UPrinting products
 
 ## ⚙️ Configuration
 
-### Environment Variables (.env)
-
-```bash
-# Product URLs CSV file path
-PRODUCTS_CSV_PATH=../UPrinting_Products_CLEANED.csv
-
-# AI API Keys (add as many as you have for fallback)
-GEMINI_API_KEY=your_gemini_api_key_here
-CLAUDE_API_KEY=your_claude_api_key_here
-OPENAI_API_KEY=your_openai_api_key_here
-
-# Chrome MCP Server Configuration (optional)
-CHROME_MCP_CONFIG_PATH=chrome_mcp_config.json
-
-# Framework Settings
-MAX_CONCURRENT_REQUESTS=5
-REQUEST_DELAY_SECONDS=0.02
-BATCH_SIZE=100
-MAX_RETRIES=3
-
-# Web Interface Settings
-WEB_HOST=localhost
-WEB_PORT=8080
-DEBUG_MODE=true
-```
 
 ## 🎯 Usage
 
