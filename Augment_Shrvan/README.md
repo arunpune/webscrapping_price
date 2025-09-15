@@ -24,7 +24,7 @@ An intelligent framework for automating price extraction from UPrinting products
 
 1. **Clone or download the framework**:
    ```bash
-   cd UPrinting_Automation_Framework
+   cd Augment_Shrvan
    ```
 
 2. **Run the setup script**:
@@ -34,7 +34,11 @@ An intelligent framework for automating price extraction from UPrinting products
 
 3. **Configure environment**:
 
-   - Update CSV file path
+   - 
+   - This file has a the list of website urls - UPrinting_Products_CLEANED.csv
+   - add the CSV file to folder /Augment_Shrvan
+   - Then Update CSV file path in .env
+   - 
 
 4. **Start the framework**:
    ```bash
