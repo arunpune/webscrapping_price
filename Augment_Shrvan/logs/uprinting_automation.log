@@ -3400,3 +3400,64 @@
 2025-09-02 17:44:49 | SUCCESS  | price_extractor:extract_all_prices:189 - Price extraction completed for Flat Thank You Cards
 2025-09-02 17:44:49 | INFO     | price_extractor:extract_all_prices:190 - Success rate: 100.0%
 2025-09-02 17:50:02 | INFO     | web_interface:handle_disconnect:521 - Client disconnected from WebSocket
+2025-09-17 12:13:52 | INFO     | __main__:main:146 - 🚀 UPrinting Automation Framework Starting...
+2025-09-17 12:13:52 | INFO     | __main__:main:147 - 📁 Working directory: C:\Users\shrva\Desktop\Canspirit\webscrapping_price\Augment_Shrvan
+2025-09-17 12:13:52 | INFO     | __main__:main:148 - 📄 Products CSV: UPrinting_Products_CLEANED.csv
+2025-09-17 12:13:52 | INFO     | __main__:main:149 - 🤖 AI APIs available: 0
+2025-09-17 12:13:52 | INFO     | __main__:validate_environment:52 - Validating environment...
+2025-09-17 12:13:52 | SUCCESS  | __main__:validate_environment:58 - ✅ products_csv_exists
+2025-09-17 12:13:52 | WARNING  | __main__:validate_environment:60 - ⚠️ has_ai_apis
+2025-09-17 12:13:52 | SUCCESS  | __main__:validate_environment:58 - ✅ directories_created
+2025-09-17 12:13:52 | SUCCESS  | __main__:validate_environment:58 - ✅ uprinting_api_configured
+2025-09-17 12:13:52 | WARNING  | __main__:validate_environment:68 - No AI APIs configured. AI-assisted analysis will be disabled.
+2025-09-17 12:13:52 | INFO     | __main__:run_web_mode:87 - Starting web interface mode...
+2025-09-17 12:13:52 | INFO     | __main__:run_web_mode:88 - Web interface will be available at: http://localhost:8080
+2025-09-17 12:13:52 | INFO     | web_interface:run_web_interface:525 - Starting web interface on localhost:8080
+2025-09-17 12:13:52 | INFO     | web_interface:handle_connect:516 - Client connected to WebSocket
+2025-09-17 12:17:59 | INFO     | __main__:main:146 - 🚀 UPrinting Automation Framework Starting...
+2025-09-17 12:17:59 | INFO     | __main__:main:147 - 📁 Working directory: C:\Users\shrva\Desktop\Canspirit\webscrapping_price\Augment_Shrvan
+2025-09-17 12:17:59 | INFO     | __main__:main:148 - 📄 Products CSV: UPrinting_Products_CLEANED.csv
+2025-09-17 12:17:59 | INFO     | __main__:main:149 - 🤖 AI APIs available: 1
+2025-09-17 12:17:59 | INFO     | __main__:validate_environment:52 - Validating environment...
+2025-09-17 12:17:59 | SUCCESS  | __main__:validate_environment:58 - ✅ products_csv_exists
+2025-09-17 12:17:59 | SUCCESS  | __main__:validate_environment:58 - ✅ has_ai_apis
+2025-09-17 12:17:59 | SUCCESS  | __main__:validate_environment:58 - ✅ directories_created
+2025-09-17 12:17:59 | SUCCESS  | __main__:validate_environment:58 - ✅ uprinting_api_configured
+2025-09-17 12:17:59 | INFO     | __main__:run_web_mode:87 - Starting web interface mode...
+2025-09-17 12:17:59 | INFO     | __main__:run_web_mode:88 - Web interface will be available at: http://localhost:8080
+2025-09-17 12:17:59 | INFO     | web_interface:run_web_interface:525 - Starting web interface on localhost:8080
+2025-09-17 12:18:01 | INFO     | __main__:main:146 - 🚀 UPrinting Automation Framework Starting...
+2025-09-17 12:18:01 | INFO     | __main__:main:147 - 📁 Working directory: C:\Users\shrva\Desktop\Canspirit\webscrapping_price\Augment_Shrvan
+2025-09-17 12:18:01 | INFO     | __main__:main:148 - 📄 Products CSV: UPrinting_Products_CLEANED.csv
+2025-09-17 12:18:01 | INFO     | __main__:main:149 - 🤖 AI APIs available: 1
+2025-09-17 12:18:01 | INFO     | __main__:validate_environment:52 - Validating environment...
+2025-09-17 12:18:01 | SUCCESS  | __main__:validate_environment:58 - ✅ products_csv_exists
+2025-09-17 12:18:01 | SUCCESS  | __main__:validate_environment:58 - ✅ has_ai_apis
+2025-09-17 12:18:01 | SUCCESS  | __main__:validate_environment:58 - ✅ directories_created
+2025-09-17 12:18:01 | SUCCESS  | __main__:validate_environment:58 - ✅ uprinting_api_configured
+2025-09-17 12:18:01 | INFO     | __main__:run_web_mode:87 - Starting web interface mode...
+2025-09-17 12:18:01 | INFO     | __main__:run_web_mode:88 - Web interface will be available at: http://localhost:8080
+2025-09-17 12:18:01 | INFO     | web_interface:run_web_interface:525 - Starting web interface on localhost:8080
+2025-09-17 12:18:03 | INFO     | web_interface:handle_connect:516 - Client connected to WebSocket
+2025-09-17 12:18:07 | INFO     | web_interface:handle_connect:516 - Client connected to WebSocket
+2025-09-17 12:18:24 | INFO     | product_analyzer:analyze_product:34 - Analyzing product: 1-Color Gummed Paper Tape
+2025-09-17 12:18:24 | INFO     | product_analyzer:analyze_product:35 - URL: https://www.uprinting.com/1-color-gummed-paper-tape.html
+2025-09-17 12:18:26 | INFO     | product_analyzer:_test_api_endpoint:345 - Testing API with payload: {'product_id': '25488', 'attr5': '928754'}
+2025-09-17 12:18:27 | INFO     | product_analyzer:_test_api_endpoint:351 - API Response Status: 412
+2025-09-17 12:18:27 | INFO     | product_analyzer:_test_api_endpoint:352 - API Response: {"ErrorMessage":"Invalid Attribute Value ID 928754.","StackTrace":[]}
+2025-09-17 12:18:27 | ERROR    | product_analyzer:_test_api_endpoint:368 - API Test Failed: HTTP 412: {"ErrorMessage":"Invalid Attribute Value ID 928754.","StackTrace":[]}
+2025-09-17 12:18:27 | SUCCESS  | product_analyzer:analyze_product:78 - Successfully analyzed 1-Color Gummed Paper Tape
+2025-09-17 12:18:33 | INFO     | product_analyzer:analyze_product:34 - Analyzing product: 2 Pocket Folders
+2025-09-17 12:18:33 | INFO     | product_analyzer:analyze_product:35 - URL: https://www.uprinting.com/2-pocket-folders.html
+2025-09-17 12:18:35 | INFO     | product_analyzer:_test_api_endpoint:345 - Testing API with payload: {'product_id': '29', 'attr3': '78262', 'attr1': '1205', 'attr4': '1207', 'attr5': '78265'}
+2025-09-17 12:18:37 | INFO     | product_analyzer:_test_api_endpoint:351 - API Response Status: 200
+2025-09-17 12:18:37 | INFO     | product_analyzer:_test_api_endpoint:352 - API Response: {"price_source":"STOCK","orig_price":401.82,"total_price":"401.82","price":"401.82","product_markup":0,"product_markdown":0,"min_markup":0,"has_markdown":0,"exceeded_pricing_threshold":"n","unit_price":"16.07280","in_stock_flag":"y","shipping_computation_type_id":"1","shipping_grid_stack_id":null,"product_id":"29","item_name":"Pocket Folders","pricing_system":"OFF","account_type_code":"OFF","turnaround":0,"max_turnaround":0,"qty":25,"sheet_qty":1,"page_qty":1,"maximum_order_quantity":0,"width":"
+2025-09-17 12:18:37 | SUCCESS  | product_analyzer:_test_api_endpoint:357 - API Test Success: Price = $401.82
+2025-09-17 12:18:37 | SUCCESS  | product_analyzer:analyze_product:78 - Successfully analyzed 2 Pocket Folders
+2025-09-17 12:18:49 | INFO     | product_analyzer:analyze_product:34 - Analyzing product: 1-Color Gummed Paper Tape
+2025-09-17 12:18:49 | INFO     | product_analyzer:analyze_product:35 - URL: https://www.uprinting.com/1-color-gummed-paper-tape.html
+2025-09-17 12:18:52 | INFO     | product_analyzer:_test_api_endpoint:345 - Testing API with payload: {'product_id': '25488', 'attr5': '928754'}
+2025-09-17 12:18:53 | INFO     | product_analyzer:_test_api_endpoint:351 - API Response Status: 412
+2025-09-17 12:18:53 | INFO     | product_analyzer:_test_api_endpoint:352 - API Response: {"ErrorMessage":"Invalid Attribute Value ID 928754.","StackTrace":[]}
+2025-09-17 12:18:53 | ERROR    | product_analyzer:_test_api_endpoint:368 - API Test Failed: HTTP 412: {"ErrorMessage":"Invalid Attribute Value ID 928754.","StackTrace":[]}
+2025-09-17 12:18:53 | SUCCESS  | product_analyzer:analyze_product:78 - Successfully analyzed 1-Color Gummed Paper Tape
