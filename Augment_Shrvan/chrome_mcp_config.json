@@ -1,0 +1,13 @@
+{
+  "server": {
+    "command": "npx",
+    "args": [
+      "@modelcontextprotocol/server-chrome"
+    ],
+    "env": {}
+  },
+  "client": {
+    "timeout": 30000,
+    "retries": 3
+  }
+}
