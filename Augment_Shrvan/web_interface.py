@@ -22,6 +22,7 @@ from datetime import datetime
 from config import config, OUTPUT_DIR
 from product_analyzer import ProductAnalyzer
 from price_extractor import PriceExtractor
+from sheet_mapper import SheetMapper
 from loguru import logger
 
 app = Flask(__name__)
@@ -91,60 +92,88 @@ def search_products():
         })
 
 @app.route('/api/analyze/<int:product_index>')
-def analyze_product(product_index):
-    """Analyze a specific product"""
+def analyze_product_by_index(product_index):
+    """Analyze a specific product by index (legacy endpoint)"""
     try:
         df = pd.read_csv(config.products_csv_path)
-        
+
         if product_index >= len(df):
             return jsonify({
                 'success': False,
                 'error': 'Product index out of range'
             })
-        
+
         product = df.iloc[product_index]
         product_name = product['Product Name']
         product_url = product['URL']
-        
-        # Start analysis in background
-        def run_analysis():
-            global current_analysis, progress_data
-            
-            progress_data.update({
-                'current_step': 'analyzing',
-                'progress': 0,
-                'total': 1,
-                'message': f'Analyzing {product_name}...'
-            })
-            socketio.emit('progress_update', progress_data)
-            
-            analyzer = ProductAnalyzer()
-            result = analyzer.analyze_product(product_url, product_name)
-            
-            current_analysis = result
-            
-            progress_data.update({
-                'current_step': 'completed',
-                'progress': 1,
-                'total': 1,
-                'message': 'Analysis completed'
-            })
-            socketio.emit('analysis_complete', result)
-            socketio.emit('progress_update', progress_data)
-        
-        thread = threading.Thread(target=run_analysis)
-        thread.start()
-        
-        return jsonify({
-            'success': True,
-            'message': 'Analysis started'
-        })
-        
+
+        return analyze_product_by_data(product_name, product_url)
+
     except Exception as e:
         return jsonify({
             'success': False,
             'error': str(e)
         })
+
+@app.route('/api/analyze/product', methods=['POST'])
+def analyze_product():
+    """Analyze a specific product by name and URL"""
+    try:
+        data = request.get_json()
+        product_name = data.get('product_name')
+        product_url = data.get('product_url')
+
+        if not product_name or not product_url:
+            return jsonify({
+                'success': False,
+                'error': 'Product name and URL are required'
+            })
+
+        return analyze_product_by_data(product_name, product_url)
+
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        })
+
+def analyze_product_by_data(product_name, product_url):
+    """Common function to analyze product by name and URL"""
+    global current_analysis, progress_data
+
+    # Start analysis in background
+    def run_analysis():
+        global current_analysis, progress_data
+
+        progress_data.update({
+            'current_step': 'analyzing',
+            'progress': 0,
+            'total': 1,
+            'message': f'Analyzing {product_name}...'
+        })
+        socketio.emit('progress_update', progress_data)
+
+        analyzer = ProductAnalyzer()
+        result = analyzer.analyze_product(product_url, product_name)
+
+        current_analysis = result
+
+        progress_data.update({
+            'current_step': 'completed',
+            'progress': 1,
+            'total': 1,
+            'message': 'Analysis completed'
+        })
+        socketio.emit('analysis_complete', result)
+        socketio.emit('progress_update', progress_data)
+
+    thread = threading.Thread(target=run_analysis)
+    thread.start()
+
+    return jsonify({
+        'success': True,
+        'message': 'Analysis started'
+    })
 
 @app.route('/api/analysis/current')
 def get_current_analysis():
@@ -508,6 +537,79 @@ def download_file(filename):
 def get_progress():
     """Get current progress status"""
     return jsonify(progress_data)
+
+@app.route('/api/mapper/analyze', methods=['POST'])
+def analyze_sheets_for_mapping():
+    """Analyze sheets for intelligent mapping"""
+    try:
+        if 'extracted_csv' not in request.files or 'target_sheet' not in request.files:
+            return jsonify({
+                'success': False,
+                'error': 'Both extracted CSV and target sheet files are required'
+            })
+
+        extracted_file = request.files['extracted_csv']
+        target_file = request.files['target_sheet']
+
+        # Save uploaded files temporarily
+        extracted_path = OUTPUT_DIR / f"temp_extracted_{extracted_file.filename}"
+        target_path = OUTPUT_DIR / f"temp_target_{target_file.filename}"
+
+        extracted_file.save(extracted_path)
+        target_file.save(target_path)
+
+        # Analyze sheets
+        mapper = SheetMapper()
+        analysis = mapper.analyze_sheets(str(extracted_path), str(target_path))
+
+        return jsonify({
+            'success': True,
+            'analysis': analysis
+        })
+
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        })
+
+@app.route('/api/mapper/apply', methods=['POST'])
+def apply_sheet_mapping():
+    """Apply mappings and generate populated sheet"""
+    try:
+        data = request.get_json()
+
+        extracted_path = data.get('extracted_path')
+        target_path = data.get('target_path')
+        mappings = data.get('mappings')
+        manual_mappings = data.get('manual_mappings', {})
+
+        if not all([extracted_path, target_path, mappings]):
+            return jsonify({
+                'success': False,
+                'error': 'Missing required parameters'
+            })
+
+        # Apply mappings
+        mapper = SheetMapper()
+        result_df = mapper.apply_mappings(extracted_path, target_path, mappings, manual_mappings)
+
+        # Save result
+        output_filename = f"mapped_result_{int(time.time())}.xlsx"
+        output_path = OUTPUT_DIR / output_filename
+        result_df.to_excel(output_path, index=False)
+
+        return jsonify({
+            'success': True,
+            'output_file': output_filename,
+            'populated_count': len(result_df)
+        })
+
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        })
 
 @socketio.on('connect')
 def handle_connect():

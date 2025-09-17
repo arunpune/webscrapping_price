@@ -1,0 +1,421 @@
+combination_id,product_name,Size,Printed Side,Bundling,Quantity,Printing Time,price,total_price,unit_price,qty_pieces,turnaround_days,Size_id,Printed Side_id,Bundling_id,Quantity_id,Printing Time_id,timestamp,notes
+1,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,10,3 Business Days,$11.25,$11.25,1.12500,10,3,644,651,68504,114420,669,2025-09-05T23:24:36.786924,Extracted using real API endpoints
+2,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,25,3 Business Days,$13.23,$13.23,0.52920,25,3,644,651,68504,1169,669,2025-09-05T23:24:37.575467,Extracted using real API endpoints
+3,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,50,3 Business Days,$16.52,$16.52,0.33040,50,3,644,651,68504,1168,669,2025-09-05T23:24:38.004325,Extracted using real API endpoints
+4,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,75,3 Business Days,$19.21,$19.21,0.25613,75,3,644,651,68504,1170,669,2025-09-05T23:24:38.444398,Extracted using real API endpoints
+5,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,100,3 Business Days,$21.90,$21.90,0.21900,100,3,644,651,68504,653,669,2025-09-05T23:24:39.206574,Extracted using real API endpoints
+6,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,125,3 Business Days,$24.59,$24.59,0.19672,125,3,644,651,68504,1171,669,2025-09-05T23:24:39.969104,Extracted using real API endpoints
+7,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,150,3 Business Days,$27.28,$27.28,0.18187,150,3,644,651,68504,654,669,2025-09-05T23:24:40.734468,Extracted using real API endpoints
+8,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,175,3 Business Days,$29.97,$29.97,0.17126,175,3,644,651,68504,1172,669,2025-09-05T23:24:41.517620,Extracted using real API endpoints
+9,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,200,3 Business Days,$32.67,$32.67,0.16335,200,3,644,651,68504,655,669,2025-09-05T23:24:42.278400,Extracted using real API endpoints
+10,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,250,3 Business Days,$48.93,$48.93,0.19572,250,3,644,651,68504,1173,669,2025-09-05T23:24:42.713179,Extracted using real API endpoints
+11,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,500,3 Business Days,$51.27,$51.27,0.10254,500,3,644,651,68504,656,669,2025-09-05T23:24:43.478104,Extracted using real API endpoints
+12,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,"1,000",3 Business Days,$55.95,$55.95,0.05595,1000,3,644,651,68504,657,669,2025-09-05T23:24:43.888215,Extracted using real API endpoints
+13,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,"2,000",3 Business Days,$82.99,$82.99,0.04150,2000,3,644,651,68504,658,669,2025-09-05T23:24:44.287229,Extracted using real API endpoints
+14,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,"3,000",3 Business Days,$107.62,$107.62,0.03587,3000,3,644,651,68504,659,669,2025-09-05T23:24:45.075123,Extracted using real API endpoints
+15,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,"4,000",3 Business Days,$130.65,$130.65,0.03266,4000,3,644,651,68504,660,669,2025-09-05T23:24:47.232878,Extracted using real API endpoints
+16,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,"5,000",3 Business Days,$153.67,$153.67,0.03073,5000,3,644,651,68504,661,669,2025-09-05T23:24:47.991098,Extracted using real API endpoints
+17,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,"6,000",3 Business Days,$175.62,$175.62,0.02927,6000,3,644,651,68504,662,669,2025-09-05T23:24:48.755109,Extracted using real API endpoints
+18,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,"7,000",3 Business Days,$197.58,$197.58,0.02823,7000,3,644,651,68504,663,669,2025-09-05T23:24:49.172861,Extracted using real API endpoints
+19,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,"8,000",3 Business Days,$219.53,$219.53,0.02744,8000,3,644,651,68504,664,669,2025-09-05T23:24:49.581338,Extracted using real API endpoints
+20,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,"9,000",3 Business Days,$241.48,$241.48,0.02683,9000,3,644,651,68504,665,669,2025-09-05T23:24:49.995125,Extracted using real API endpoints
+21,Flat Greeting Cards,"3.5"" x 5""",Front Only,None,"10,000",3 Business Days,$263.44,$263.44,0.02634,10000,3,644,651,68504,666,669,2025-09-05T23:24:50.405138,Extracted using real API endpoints
+22,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,10,3 Business Days,$29.74,$29.74,2.97400,10,3,644,651,68505,114420,669,2025-09-05T23:24:50.815942,Extracted using real API endpoints
+23,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,25,3 Business Days,$44.14,$44.14,1.76560,25,3,644,651,68505,1169,669,2025-09-05T23:24:51.218069,Extracted using real API endpoints
+24,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,50,3 Business Days,$68.15,$68.15,1.36300,50,3,644,651,68505,1168,669,2025-09-05T23:24:51.641166,Extracted using real API endpoints
+25,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,75,3 Business Days,$91.56,$91.56,1.22080,75,3,644,651,68505,1170,669,2025-09-05T23:24:52.069510,Extracted using real API endpoints
+26,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,100,3 Business Days,$114.97,$114.97,1.14970,100,3,644,651,68505,653,669,2025-09-05T23:24:52.827378,Extracted using real API endpoints
+27,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,125,3 Business Days,$138.37,$138.37,1.10696,125,3,644,651,68505,1171,669,2025-09-05T23:24:53.238302,Extracted using real API endpoints
+28,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,150,3 Business Days,$161.78,$161.78,1.07853,150,3,644,651,68505,654,669,2025-09-05T23:24:54.027235,Extracted using real API endpoints
+29,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,175,3 Business Days,$185.19,$185.19,1.05823,175,3,644,651,68505,1172,669,2025-09-05T23:24:54.448262,Extracted using real API endpoints
+30,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,200,3 Business Days,$208.60,$208.60,1.04300,200,3,644,651,68505,655,669,2025-09-05T23:24:54.872454,Extracted using real API endpoints
+31,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,250,3 Business Days,$266.29,$266.29,1.06516,250,3,644,651,68505,1173,669,2025-09-05T23:24:55.290354,Extracted using real API endpoints
+32,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,500,3 Business Days,$475.80,$475.80,0.95160,500,3,644,651,68505,656,669,2025-09-05T23:24:55.712389,Extracted using real API endpoints
+33,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,"1,000",3 Business Days,$894.81,$894.81,0.89481,1000,3,644,651,68505,657,669,2025-09-05T23:24:56.128842,Extracted using real API endpoints
+34,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,"2,000",3 Business Days,$1750.51,$1750.51,0.87526,2000,3,644,651,68505,658,669,2025-09-05T23:24:56.542332,Extracted using real API endpoints
+35,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,"3,000",3 Business Days,$2603.80,$2603.80,0.86793,3000,3,644,651,68505,659,669,2025-09-05T23:24:56.949127,Extracted using real API endpoints
+36,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,"4,000",3 Business Days,$3455.48,$3455.48,0.86387,4000,3,644,651,68505,660,669,2025-09-05T23:24:57.723495,Extracted using real API endpoints
+37,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,"5,000",3 Business Days,$4307.17,$4307.17,0.86143,5000,3,644,651,68505,661,669,2025-09-05T23:24:58.138822,Extracted using real API endpoints
+38,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,"6,000",3 Business Days,$5157.78,$5157.78,0.85963,6000,3,644,651,68505,662,669,2025-09-05T23:24:58.556125,Extracted using real API endpoints
+39,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,"7,000",3 Business Days,$6008.39,$6008.39,0.85834,7000,3,644,651,68505,663,669,2025-09-05T23:24:58.978761,Extracted using real API endpoints
+40,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,"8,000",3 Business Days,$6859.00,$6859.00,0.85738,8000,3,644,651,68505,664,669,2025-09-05T23:24:59.401187,Extracted using real API endpoints
+41,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,"9,000",3 Business Days,$7709.61,$7709.61,0.85662,9000,3,644,651,68505,665,669,2025-09-05T23:25:00.167441,Extracted using real API endpoints
+42,Flat Greeting Cards,"3.5"" x 5""",Front Only,Shrink Wrapping,"10,000",3 Business Days,$8560.23,$8560.23,0.85602,10000,3,644,651,68505,666,669,2025-09-05T23:25:00.582385,Extracted using real API endpoints
+43,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,10,3 Business Days,$11.85,$11.85,1.18500,10,3,644,652,68504,114420,669,2025-09-05T23:25:00.988750,Extracted using real API endpoints
+44,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,25,3 Business Days,$14.73,$14.73,0.58920,25,3,644,652,68504,1169,669,2025-09-05T23:25:01.415621,Extracted using real API endpoints
+45,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,50,3 Business Days,$19.53,$19.53,0.39060,50,3,644,652,68504,1168,669,2025-09-05T23:25:01.845110,Extracted using real API endpoints
+46,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,75,3 Business Days,$23.42,$23.42,0.31227,75,3,644,652,68504,1170,669,2025-09-05T23:25:02.253004,Extracted using real API endpoints
+47,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,100,3 Business Days,$27.32,$27.32,0.27320,100,3,644,652,68504,653,669,2025-09-05T23:25:02.680290,Extracted using real API endpoints
+48,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,125,3 Business Days,$31.21,$31.21,0.24968,125,3,644,652,68504,1171,669,2025-09-05T23:25:03.432255,Extracted using real API endpoints
+49,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,150,3 Business Days,$35.11,$35.11,0.23407,150,3,644,652,68504,654,669,2025-09-05T23:25:03.863707,Extracted using real API endpoints
+50,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,175,3 Business Days,$39.00,$39.00,0.22286,175,3,644,652,68504,1172,669,2025-09-05T23:25:04.271447,Extracted using real API endpoints
+51,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,200,3 Business Days,$42.90,$42.90,0.21450,200,3,644,652,68504,655,669,2025-09-05T23:25:04.682891,Extracted using real API endpoints
+52,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,250,3 Business Days,$73.48,$73.48,0.29392,250,3,644,652,68504,1173,669,2025-09-05T23:25:05.460955,Extracted using real API endpoints
+53,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,500,3 Business Days,$77.08,$77.08,0.15416,500,3,644,652,68504,656,669,2025-09-05T23:25:05.884678,Extracted using real API endpoints
+54,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,"1,000",3 Business Days,$84.28,$84.28,0.08428,1000,3,644,652,68504,657,669,2025-09-05T23:25:06.642024,Extracted using real API endpoints
+55,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,"2,000",3 Business Days,$121.57,$121.57,0.06079,2000,3,644,652,68504,658,669,2025-09-05T23:25:07.049261,Extracted using real API endpoints
+56,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,"3,000",3 Business Days,$156.46,$156.46,0.05215,3000,3,644,652,68504,659,669,2025-09-05T23:25:07.455752,Extracted using real API endpoints
+57,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,"4,000",3 Business Days,$189.73,$189.73,0.04743,4000,3,644,652,68504,660,669,2025-09-05T23:25:07.880278,Extracted using real API endpoints
+58,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,"5,000",3 Business Days,$223.01,$223.01,0.04460,5000,3,644,652,68504,661,669,2025-09-05T23:25:08.301757,Extracted using real API endpoints
+59,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,"6,000",3 Business Days,$254.41,$254.41,0.04240,6000,3,644,652,68504,662,669,2025-09-05T23:25:08.738647,Extracted using real API endpoints
+60,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,"7,000",3 Business Days,$285.82,$285.82,0.04083,7000,3,644,652,68504,663,669,2025-09-05T23:25:09.172295,Extracted using real API endpoints
+61,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,"8,000",3 Business Days,$317.22,$317.22,0.03965,8000,3,644,652,68504,664,669,2025-09-05T23:25:09.601570,Extracted using real API endpoints
+62,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,"9,000",3 Business Days,$348.63,$348.63,0.03874,9000,3,644,652,68504,665,669,2025-09-05T23:25:10.012833,Extracted using real API endpoints
+63,Flat Greeting Cards,"3.5"" x 5""",Front and Back,None,"10,000",3 Business Days,$380.03,$380.03,0.03800,10000,3,644,652,68504,666,669,2025-09-05T23:25:10.449202,Extracted using real API endpoints
+64,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,10,3 Business Days,$30.34,$30.34,3.03400,10,3,644,652,68505,114420,669,2025-09-05T23:25:10.883551,Extracted using real API endpoints
+65,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,25,3 Business Days,$45.65,$45.65,1.82600,25,3,644,652,68505,1169,669,2025-09-05T23:25:11.297344,Extracted using real API endpoints
+66,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,50,3 Business Days,$71.16,$71.16,1.42320,50,3,644,652,68505,1168,669,2025-09-05T23:25:11.722161,Extracted using real API endpoints
+67,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,75,3 Business Days,$95.77,$95.77,1.27693,75,3,644,652,68505,1170,669,2025-09-05T23:25:12.148634,Extracted using real API endpoints
+68,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,100,3 Business Days,$120.38,$120.38,1.20380,100,3,644,652,68505,653,669,2025-09-05T23:25:12.571993,Extracted using real API endpoints
+69,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,125,3 Business Days,$145.00,$145.00,1.16000,125,3,644,652,68505,1171,669,2025-09-05T23:25:13.369551,Extracted using real API endpoints
+70,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,150,3 Business Days,$169.61,$169.61,1.13073,150,3,644,652,68505,654,669,2025-09-05T23:25:13.800509,Extracted using real API endpoints
+71,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,175,3 Business Days,$194.22,$194.22,1.10983,175,3,644,652,68505,1172,669,2025-09-05T23:25:14.222849,Extracted using real API endpoints
+72,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,200,3 Business Days,$218.83,$218.83,1.09415,200,3,644,652,68505,655,669,2025-09-05T23:25:14.651587,Extracted using real API endpoints
+73,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,250,3 Business Days,$290.84,$290.84,1.16336,250,3,644,652,68505,1173,669,2025-09-05T23:25:15.065975,Extracted using real API endpoints
+74,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,500,3 Business Days,$501.61,$501.61,1.00322,500,3,644,652,68505,656,669,2025-09-05T23:25:15.473348,Extracted using real API endpoints
+75,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,"1,000",3 Business Days,$923.14,$923.14,0.92314,1000,3,644,652,68505,657,669,2025-09-05T23:25:15.903447,Extracted using real API endpoints
+76,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,"2,000",3 Business Days,$1789.09,$1789.09,0.89455,2000,3,644,652,68505,658,669,2025-09-05T23:25:16.319318,Extracted using real API endpoints
+77,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,"3,000",3 Business Days,$2652.63,$2652.63,0.88421,3000,3,644,652,68505,659,669,2025-09-05T23:25:16.747149,Extracted using real API endpoints
+78,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,"4,000",3 Business Days,$3514.57,$3514.57,0.87864,4000,3,644,652,68505,660,669,2025-09-05T23:25:17.161805,Extracted using real API endpoints
+79,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,"5,000",3 Business Days,$4376.51,$4376.51,0.87530,5000,3,644,652,68505,661,669,2025-09-05T23:25:17.571189,Extracted using real API endpoints
+80,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,"6,000",3 Business Days,$5236.57,$5236.57,0.87276,6000,3,644,652,68505,662,669,2025-09-05T23:25:17.983844,Extracted using real API endpoints
+81,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,"7,000",3 Business Days,$6096.63,$6096.63,0.87095,7000,3,644,652,68505,663,669,2025-09-05T23:25:18.389207,Extracted using real API endpoints
+82,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,"8,000",3 Business Days,$6956.69,$6956.69,0.86959,8000,3,644,652,68505,664,669,2025-09-05T23:25:18.831570,Extracted using real API endpoints
+83,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,"9,000",3 Business Days,$7816.76,$7816.76,0.86853,9000,3,644,652,68505,665,669,2025-09-05T23:25:19.591185,Extracted using real API endpoints
+84,Flat Greeting Cards,"3.5"" x 5""",Front and Back,Shrink Wrapping,"10,000",3 Business Days,$8676.82,$8676.82,0.86768,10000,3,644,652,68505,666,669,2025-09-05T23:25:20.003749,Extracted using real API endpoints
+85,Flat Greeting Cards,"4"" x 6""",Front Only,None,10,3 Business Days,$13.80,$13.80,1.38000,10,3,645,651,68504,114420,669,2025-09-05T23:25:20.422679,Extracted using real API endpoints
+86,Flat Greeting Cards,"4"" x 6""",Front Only,None,25,3 Business Days,$18.25,$18.25,0.73000,25,3,645,651,68504,1169,669,2025-09-05T23:25:20.833444,Extracted using real API endpoints
+87,Flat Greeting Cards,"4"" x 6""",Front Only,None,50,3 Business Days,$25.65,$25.65,0.51300,50,3,645,651,68504,1168,669,2025-09-05T23:25:21.237835,Extracted using real API endpoints
+88,Flat Greeting Cards,"4"" x 6""",Front Only,None,75,3 Business Days,$31.71,$31.71,0.42280,75,3,645,651,68504,1170,669,2025-09-05T23:25:21.659401,Extracted using real API endpoints
+89,Flat Greeting Cards,"4"" x 6""",Front Only,None,100,3 Business Days,$37.76,$37.76,0.37760,100,3,645,651,68504,653,669,2025-09-05T23:25:22.072187,Extracted using real API endpoints
+90,Flat Greeting Cards,"4"" x 6""",Front Only,None,125,3 Business Days,$43.82,$43.82,0.35056,125,3,645,651,68504,1171,669,2025-09-05T23:25:22.490621,Extracted using real API endpoints
+91,Flat Greeting Cards,"4"" x 6""",Front Only,None,150,3 Business Days,$49.87,$49.87,0.33247,150,3,645,651,68504,654,669,2025-09-05T23:25:22.895740,Extracted using real API endpoints
+92,Flat Greeting Cards,"4"" x 6""",Front Only,None,175,3 Business Days,$55.93,$55.93,0.31960,175,3,645,651,68504,1172,669,2025-09-05T23:25:23.305303,Extracted using real API endpoints
+93,Flat Greeting Cards,"4"" x 6""",Front Only,None,200,3 Business Days,$61.98,$61.98,0.30990,200,3,645,651,68504,655,669,2025-09-05T23:25:23.746444,Extracted using real API endpoints
+94,Flat Greeting Cards,"4"" x 6""",Front Only,None,250,3 Business Days,$63.49,$63.49,0.25396,250,3,645,651,68504,1173,669,2025-09-05T23:25:24.157479,Extracted using real API endpoints
+95,Flat Greeting Cards,"4"" x 6""",Front Only,None,500,3 Business Days,$66.74,$66.74,0.13348,500,3,645,651,68504,656,669,2025-09-05T23:25:24.572332,Extracted using real API endpoints
+96,Flat Greeting Cards,"4"" x 6""",Front Only,None,"1,000",3 Business Days,$73.25,$73.25,0.07325,1000,3,645,651,68504,657,669,2025-09-05T23:25:24.981710,Extracted using real API endpoints
+97,Flat Greeting Cards,"4"" x 6""",Front Only,None,"2,000",3 Business Days,$106.94,$106.94,0.05347,2000,3,645,651,68504,658,669,2025-09-05T23:25:25.405282,Extracted using real API endpoints
+98,Flat Greeting Cards,"4"" x 6""",Front Only,None,"3,000",3 Business Days,$140.33,$140.33,0.04678,3000,3,645,651,68504,659,669,2025-09-05T23:25:25.808726,Extracted using real API endpoints
+99,Flat Greeting Cards,"4"" x 6""",Front Only,None,"4,000",3 Business Days,$171.04,$171.04,0.04276,4000,3,645,651,68504,660,669,2025-09-05T23:25:26.240899,Extracted using real API endpoints
+100,Flat Greeting Cards,"4"" x 6""",Front Only,None,"5,000",3 Business Days,$200.42,$200.42,0.04008,5000,3,645,651,68504,661,669,2025-09-05T23:25:26.651427,Extracted using real API endpoints
+101,Flat Greeting Cards,"4"" x 6""",Front Only,None,"6,000",3 Business Days,$228.31,$228.31,0.03805,6000,3,645,651,68504,662,669,2025-09-05T23:25:27.072141,Extracted using real API endpoints
+102,Flat Greeting Cards,"4"" x 6""",Front Only,None,"7,000",3 Business Days,$256.19,$256.19,0.03660,7000,3,645,651,68504,663,669,2025-09-05T23:25:27.500727,Extracted using real API endpoints
+103,Flat Greeting Cards,"4"" x 6""",Front Only,None,"8,000",3 Business Days,$284.08,$284.08,0.03551,8000,3,645,651,68504,664,669,2025-09-05T23:25:27.902081,Extracted using real API endpoints
+104,Flat Greeting Cards,"4"" x 6""",Front Only,None,"9,000",3 Business Days,$311.97,$311.97,0.03466,9000,3,645,651,68504,665,669,2025-09-05T23:25:28.315253,Extracted using real API endpoints
+105,Flat Greeting Cards,"4"" x 6""",Front Only,None,"10,000",3 Business Days,$339.86,$339.86,0.03399,10000,3,645,651,68504,666,669,2025-09-05T23:25:28.723856,Extracted using real API endpoints
+106,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,10,3 Business Days,$32.29,$32.29,3.22900,10,3,645,651,68505,114420,669,2025-09-05T23:25:29.131882,Extracted using real API endpoints
+107,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,25,3 Business Days,$49.16,$49.16,1.96640,25,3,645,651,68505,1169,669,2025-09-05T23:25:29.541010,Extracted using real API endpoints
+108,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,50,3 Business Days,$77.29,$77.29,1.54580,50,3,645,651,68505,1168,669,2025-09-05T23:25:30.317829,Extracted using real API endpoints
+109,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,75,3 Business Days,$104.06,$104.06,1.38747,75,3,645,651,68505,1170,669,2025-09-05T23:25:30.735214,Extracted using real API endpoints
+110,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,100,3 Business Days,$130.83,$130.83,1.30830,100,3,645,651,68505,653,669,2025-09-05T23:25:31.524152,Extracted using real API endpoints
+111,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,125,3 Business Days,$157.60,$157.60,1.26080,125,3,645,651,68505,1171,669,2025-09-05T23:25:31.958251,Extracted using real API endpoints
+112,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,150,3 Business Days,$184.37,$184.37,1.22913,150,3,645,651,68505,654,669,2025-09-05T23:25:32.374290,Extracted using real API endpoints
+113,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,175,3 Business Days,$211.14,$211.14,1.20651,175,3,645,651,68505,1172,669,2025-09-05T23:25:32.813039,Extracted using real API endpoints
+114,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,200,3 Business Days,$237.91,$237.91,1.18955,200,3,645,651,68505,655,669,2025-09-05T23:25:33.239721,Extracted using real API endpoints
+115,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,250,3 Business Days,$280.85,$280.85,1.12340,250,3,645,651,68505,1173,669,2025-09-05T23:25:33.664544,Extracted using real API endpoints
+116,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,500,3 Business Days,$491.27,$491.27,0.98254,500,3,645,651,68505,656,669,2025-09-05T23:25:34.071804,Extracted using real API endpoints
+117,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,"1,000",3 Business Days,$912.11,$912.11,0.91211,1000,3,645,651,68505,657,669,2025-09-05T23:25:34.486587,Extracted using real API endpoints
+118,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,"2,000",3 Business Days,$1774.46,$1774.46,0.88723,2000,3,645,651,68505,658,669,2025-09-05T23:25:34.900045,Extracted using real API endpoints
+119,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,"3,000",3 Business Days,$2636.51,$2636.51,0.87884,3000,3,645,651,68505,659,669,2025-09-05T23:25:35.317831,Extracted using real API endpoints
+120,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,"4,000",3 Business Days,$3495.88,$3495.88,0.87397,4000,3,645,651,68505,660,669,2025-09-05T23:25:35.748870,Extracted using real API endpoints
+121,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,"5,000",3 Business Days,$4353.91,$4353.91,0.87078,5000,3,645,651,68505,661,669,2025-09-05T23:25:36.552342,Extracted using real API endpoints
+122,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,"6,000",3 Business Days,$5210.46,$5210.46,0.86841,6000,3,645,651,68505,662,669,2025-09-05T23:25:36.965890,Extracted using real API endpoints
+123,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,"7,000",3 Business Days,$6067.01,$6067.01,0.86672,7000,3,645,651,68505,663,669,2025-09-05T23:25:37.376463,Extracted using real API endpoints
+124,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,"8,000",3 Business Days,$6923.55,$6923.55,0.86544,8000,3,645,651,68505,664,669,2025-09-05T23:25:37.827326,Extracted using real API endpoints
+125,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,"9,000",3 Business Days,$7780.10,$7780.10,0.86446,9000,3,645,651,68505,665,669,2025-09-05T23:25:38.256174,Extracted using real API endpoints
+126,Flat Greeting Cards,"4"" x 6""",Front Only,Shrink Wrapping,"10,000",3 Business Days,$8636.65,$8636.65,0.86367,10000,3,645,651,68505,666,669,2025-09-05T23:25:38.704304,Extracted using real API endpoints
+127,Flat Greeting Cards,"4"" x 6""",Front and Back,None,10,3 Business Days,$15.15,$15.15,1.51500,10,3,645,652,68504,114420,669,2025-09-05T23:25:39.137507,Extracted using real API endpoints
+128,Flat Greeting Cards,"4"" x 6""",Front and Back,None,25,3 Business Days,$21.63,$21.63,0.86520,25,3,645,652,68504,1169,669,2025-09-05T23:25:39.573138,Extracted using real API endpoints
+129,Flat Greeting Cards,"4"" x 6""",Front and Back,None,50,3 Business Days,$32.43,$32.43,0.64860,50,3,645,652,68504,1168,669,2025-09-05T23:25:40.001181,Extracted using real API endpoints
+130,Flat Greeting Cards,"4"" x 6""",Front and Back,None,75,3 Business Days,$41.19,$41.19,0.54920,75,3,645,652,68504,1170,669,2025-09-05T23:25:40.406697,Extracted using real API endpoints
+131,Flat Greeting Cards,"4"" x 6""",Front and Back,None,100,3 Business Days,$49.96,$49.96,0.49960,100,3,645,652,68504,653,669,2025-09-05T23:25:40.834857,Extracted using real API endpoints
+132,Flat Greeting Cards,"4"" x 6""",Front and Back,None,125,3 Business Days,$58.72,$58.72,0.46976,125,3,645,652,68504,1171,669,2025-09-05T23:25:41.239153,Extracted using real API endpoints
+133,Flat Greeting Cards,"4"" x 6""",Front and Back,None,150,3 Business Days,$67.48,$67.48,0.44987,150,3,645,652,68504,654,669,2025-09-05T23:25:41.676042,Extracted using real API endpoints
+134,Flat Greeting Cards,"4"" x 6""",Front and Back,None,175,3 Business Days,$76.25,$76.25,0.43571,175,3,645,652,68504,1172,669,2025-09-05T23:25:42.099045,Extracted using real API endpoints
+135,Flat Greeting Cards,"4"" x 6""",Front and Back,None,200,3 Business Days,$85.01,$85.01,0.42505,200,3,645,652,68504,655,669,2025-09-05T23:25:42.509490,Extracted using real API endpoints
+136,Flat Greeting Cards,"4"" x 6""",Front and Back,None,250,3 Business Days,$97.59,$97.59,0.39036,250,3,645,652,68504,1173,669,2025-09-05T23:25:42.931122,Extracted using real API endpoints
+137,Flat Greeting Cards,"4"" x 6""",Front and Back,None,500,3 Business Days,$102.59,$102.59,0.20518,500,3,645,652,68504,656,669,2025-09-05T23:25:43.347185,Extracted using real API endpoints
+138,Flat Greeting Cards,"4"" x 6""",Front and Back,None,"1,000",3 Business Days,$112.59,$112.59,0.11259,1000,3,645,652,68504,657,669,2025-09-05T23:25:43.761453,Extracted using real API endpoints
+139,Flat Greeting Cards,"4"" x 6""",Front and Back,None,"2,000",3 Business Days,$160.52,$160.52,0.08026,2000,3,645,652,68504,658,669,2025-09-05T23:25:44.160571,Extracted using real API endpoints
+140,Flat Greeting Cards,"4"" x 6""",Front and Back,None,"3,000",3 Business Days,$208.15,$208.15,0.06938,3000,3,645,652,68504,659,669,2025-09-05T23:25:44.571215,Extracted using real API endpoints
+141,Flat Greeting Cards,"4"" x 6""",Front and Back,None,"4,000",3 Business Days,$253.11,$253.11,0.06328,4000,3,645,652,68504,660,669,2025-09-05T23:25:44.982399,Extracted using real API endpoints
+142,Flat Greeting Cards,"4"" x 6""",Front and Back,None,"5,000",3 Business Days,$296.72,$296.72,0.05934,5000,3,645,652,68504,661,669,2025-09-05T23:25:45.423231,Extracted using real API endpoints
+143,Flat Greeting Cards,"4"" x 6""",Front and Back,None,"6,000",3 Business Days,$337.74,$337.74,0.05629,6000,3,645,652,68504,662,669,2025-09-05T23:25:45.846267,Extracted using real API endpoints
+144,Flat Greeting Cards,"4"" x 6""",Front and Back,None,"7,000",3 Business Days,$378.75,$378.75,0.05411,7000,3,645,652,68504,663,669,2025-09-05T23:25:46.248509,Extracted using real API endpoints
+145,Flat Greeting Cards,"4"" x 6""",Front and Back,None,"8,000",3 Business Days,$419.76,$419.76,0.05247,8000,3,645,652,68504,664,669,2025-09-05T23:25:46.673479,Extracted using real API endpoints
+146,Flat Greeting Cards,"4"" x 6""",Front and Back,None,"9,000",3 Business Days,$460.78,$460.78,0.05120,9000,3,645,652,68504,665,669,2025-09-05T23:25:47.091503,Extracted using real API endpoints
+147,Flat Greeting Cards,"4"" x 6""",Front and Back,None,"10,000",3 Business Days,$501.79,$501.79,0.05018,10000,3,645,652,68504,666,669,2025-09-05T23:25:47.526519,Extracted using real API endpoints
+148,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,10,3 Business Days,$33.64,$33.64,3.36400,10,3,645,652,68505,114420,669,2025-09-05T23:25:47.944013,Extracted using real API endpoints
+149,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,25,3 Business Days,$52.55,$52.55,2.10200,25,3,645,652,68505,1169,669,2025-09-05T23:25:48.358914,Extracted using real API endpoints
+150,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,50,3 Business Days,$84.06,$84.06,1.68120,50,3,645,652,68505,1168,669,2025-09-05T23:25:48.786481,Extracted using real API endpoints
+151,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,75,3 Business Days,$113.54,$113.54,1.51387,75,3,645,652,68505,1170,669,2025-09-05T23:25:49.235845,Extracted using real API endpoints
+152,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,100,3 Business Days,$143.02,$143.02,1.43020,100,3,645,652,68505,653,669,2025-09-05T23:25:49.673504,Extracted using real API endpoints
+153,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,125,3 Business Days,$172.50,$172.50,1.38000,125,3,645,652,68505,1171,669,2025-09-05T23:25:50.491607,Extracted using real API endpoints
+154,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,150,3 Business Days,$201.98,$201.98,1.34653,150,3,645,652,68505,654,669,2025-09-05T23:25:50.948577,Extracted using real API endpoints
+155,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,175,3 Business Days,$231.46,$231.46,1.32263,175,3,645,652,68505,1172,669,2025-09-05T23:25:51.387995,Extracted using real API endpoints
+156,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,200,3 Business Days,$260.94,$260.94,1.30470,200,3,645,652,68505,655,669,2025-09-05T23:25:51.840939,Extracted using real API endpoints
+157,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,250,3 Business Days,$314.95,$314.95,1.25980,250,3,645,652,68505,1173,669,2025-09-05T23:25:52.264257,Extracted using real API endpoints
+158,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,500,3 Business Days,$527.12,$527.12,1.05424,500,3,645,652,68505,656,669,2025-09-05T23:25:52.680386,Extracted using real API endpoints
+159,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,"1,000",3 Business Days,$951.45,$951.45,0.95145,1000,3,645,652,68505,657,669,2025-09-05T23:25:53.121914,Extracted using real API endpoints
+160,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,"2,000",3 Business Days,$1828.04,$1828.04,0.91402,2000,3,645,652,68505,658,669,2025-09-05T23:25:53.536147,Extracted using real API endpoints
+161,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,"3,000",3 Business Days,$2704.33,$2704.33,0.90144,3000,3,645,652,68505,659,669,2025-09-05T23:25:53.945870,Extracted using real API endpoints
+162,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,"4,000",3 Business Days,$3577.94,$3577.94,0.89449,4000,3,645,652,68505,660,669,2025-09-05T23:25:54.361806,Extracted using real API endpoints
+163,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,"5,000",3 Business Days,$4450.22,$4450.22,0.89004,5000,3,645,652,68505,661,669,2025-09-05T23:25:54.780703,Extracted using real API endpoints
+164,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,"6,000",3 Business Days,$5319.89,$5319.89,0.88665,6000,3,645,652,68505,662,669,2025-09-05T23:25:55.191026,Extracted using real API endpoints
+165,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,"7,000",3 Business Days,$6189.56,$6189.56,0.88422,7000,3,645,652,68505,663,669,2025-09-05T23:25:55.612177,Extracted using real API endpoints
+166,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,"8,000",3 Business Days,$7059.23,$7059.23,0.88240,8000,3,645,652,68505,664,669,2025-09-05T23:25:56.038067,Extracted using real API endpoints
+167,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,"9,000",3 Business Days,$7928.91,$7928.91,0.88099,9000,3,645,652,68505,665,669,2025-09-05T23:25:56.459132,Extracted using real API endpoints
+168,Flat Greeting Cards,"4"" x 6""",Front and Back,Shrink Wrapping,"10,000",3 Business Days,$8798.58,$8798.58,0.87986,10000,3,645,652,68505,666,669,2025-09-05T23:25:56.883041,Extracted using real API endpoints
+169,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,10,3 Business Days,$11.64,$11.64,1.16400,10,3,19142,651,68504,114420,669,2025-09-05T23:25:57.302296,Extracted using real API endpoints
+170,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,25,3 Business Days,$13.86,$13.86,0.55440,25,3,19142,651,68504,1169,669,2025-09-05T23:25:57.727796,Extracted using real API endpoints
+171,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,50,3 Business Days,$17.57,$17.57,0.35140,50,3,19142,651,68504,1168,669,2025-09-05T23:25:58.161887,Extracted using real API endpoints
+172,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,75,3 Business Days,$20.60,$20.60,0.27467,75,3,19142,651,68504,1170,669,2025-09-05T23:25:58.600611,Extracted using real API endpoints
+173,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,100,3 Business Days,$23.62,$23.62,0.23620,100,3,19142,651,68504,653,669,2025-09-05T23:25:59.030337,Extracted using real API endpoints
+174,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,125,3 Business Days,$26.65,$26.65,0.21320,125,3,19142,651,68504,1171,669,2025-09-05T23:25:59.437517,Extracted using real API endpoints
+175,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,150,3 Business Days,$29.68,$29.68,0.19787,150,3,19142,651,68504,654,669,2025-09-05T23:25:59.852282,Extracted using real API endpoints
+176,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,175,3 Business Days,$32.71,$32.71,0.18691,175,3,19142,651,68504,1172,669,2025-09-05T23:26:00.259485,Extracted using real API endpoints
+177,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,200,3 Business Days,$35.73,$35.73,0.17865,200,3,19142,651,68504,655,669,2025-09-05T23:26:00.669545,Extracted using real API endpoints
+178,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,250,3 Business Days,$63.49,$63.49,0.25396,250,3,19142,651,68504,1173,669,2025-09-05T23:26:01.081763,Extracted using real API endpoints
+179,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,500,3 Business Days,$66.74,$66.74,0.13348,500,3,19142,651,68504,656,669,2025-09-05T23:26:01.508569,Extracted using real API endpoints
+180,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,"1,000",3 Business Days,$73.25,$73.25,0.07325,1000,3,19142,651,68504,657,669,2025-09-05T23:26:01.915844,Extracted using real API endpoints
+181,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,"2,000",3 Business Days,$106.94,$106.94,0.05347,2000,3,19142,651,68504,658,669,2025-09-05T23:26:02.343371,Extracted using real API endpoints
+182,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,"3,000",3 Business Days,$140.33,$140.33,0.04678,3000,3,19142,651,68504,659,669,2025-09-05T23:26:02.761427,Extracted using real API endpoints
+183,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,"4,000",3 Business Days,$171.04,$171.04,0.04276,4000,3,19142,651,68504,660,669,2025-09-05T23:26:03.186388,Extracted using real API endpoints
+184,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,"5,000",3 Business Days,$200.42,$200.42,0.04008,5000,3,19142,651,68504,661,669,2025-09-05T23:26:03.602944,Extracted using real API endpoints
+185,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,"6,000",3 Business Days,$228.31,$228.31,0.03805,6000,3,19142,651,68504,662,669,2025-09-05T23:26:04.015116,Extracted using real API endpoints
+186,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,"7,000",3 Business Days,$256.19,$256.19,0.03660,7000,3,19142,651,68504,663,669,2025-09-05T23:26:04.441834,Extracted using real API endpoints
+187,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,"8,000",3 Business Days,$284.08,$284.08,0.03551,8000,3,19142,651,68504,664,669,2025-09-05T23:26:04.865813,Extracted using real API endpoints
+188,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,"9,000",3 Business Days,$311.97,$311.97,0.03466,9000,3,19142,651,68504,665,669,2025-09-05T23:26:05.292511,Extracted using real API endpoints
+189,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,None,"10,000",3 Business Days,$339.86,$339.86,0.03399,10000,3,19142,651,68504,666,669,2025-09-05T23:26:05.708822,Extracted using real API endpoints
+190,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,10,3 Business Days,$30.13,$30.13,3.01300,10,3,19142,651,68505,114420,669,2025-09-05T23:26:06.152053,Extracted using real API endpoints
+191,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,25,3 Business Days,$44.78,$44.78,1.79120,25,3,19142,651,68505,1169,669,2025-09-05T23:26:06.576408,Extracted using real API endpoints
+192,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,50,3 Business Days,$69.20,$69.20,1.38400,50,3,19142,651,68505,1168,669,2025-09-05T23:26:06.996993,Extracted using real API endpoints
+193,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,75,3 Business Days,$92.94,$92.94,1.23920,75,3,19142,651,68505,1170,669,2025-09-05T23:26:07.423720,Extracted using real API endpoints
+194,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,100,3 Business Days,$116.69,$116.69,1.16690,100,3,19142,651,68505,653,669,2025-09-05T23:26:07.855454,Extracted using real API endpoints
+195,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,125,3 Business Days,$140.43,$140.43,1.12344,125,3,19142,651,68505,1171,669,2025-09-05T23:26:08.291777,Extracted using real API endpoints
+196,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,150,3 Business Days,$164.18,$164.18,1.09453,150,3,19142,651,68505,654,669,2025-09-05T23:26:08.725711,Extracted using real API endpoints
+197,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,175,3 Business Days,$187.92,$187.92,1.07383,175,3,19142,651,68505,1172,669,2025-09-05T23:26:09.158503,Extracted using real API endpoints
+198,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,200,3 Business Days,$211.66,$211.66,1.05830,200,3,19142,651,68505,655,669,2025-09-05T23:26:09.577594,Extracted using real API endpoints
+199,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,250,3 Business Days,$280.85,$280.85,1.12340,250,3,19142,651,68505,1173,669,2025-09-05T23:26:09.986015,Extracted using real API endpoints
+200,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,500,3 Business Days,$491.27,$491.27,0.98254,500,3,19142,651,68505,656,669,2025-09-05T23:26:10.402740,Extracted using real API endpoints
+201,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,"1,000",3 Business Days,$912.11,$912.11,0.91211,1000,3,19142,651,68505,657,669,2025-09-05T23:26:10.821149,Extracted using real API endpoints
+202,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,"2,000",3 Business Days,$1774.46,$1774.46,0.88723,2000,3,19142,651,68505,658,669,2025-09-05T23:26:11.250973,Extracted using real API endpoints
+203,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,"3,000",3 Business Days,$2636.51,$2636.51,0.87884,3000,3,19142,651,68505,659,669,2025-09-05T23:26:11.680834,Extracted using real API endpoints
+204,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,"4,000",3 Business Days,$3495.88,$3495.88,0.87397,4000,3,19142,651,68505,660,669,2025-09-05T23:26:12.089563,Extracted using real API endpoints
+205,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,"5,000",3 Business Days,$4353.91,$4353.91,0.87078,5000,3,19142,651,68505,661,669,2025-09-05T23:26:12.513933,Extracted using real API endpoints
+206,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,"6,000",3 Business Days,$5210.46,$5210.46,0.86841,6000,3,19142,651,68505,662,669,2025-09-05T23:26:12.946351,Extracted using real API endpoints
+207,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,"7,000",3 Business Days,$6067.01,$6067.01,0.86672,7000,3,19142,651,68505,663,669,2025-09-05T23:26:13.363298,Extracted using real API endpoints
+208,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,"8,000",3 Business Days,$6923.55,$6923.55,0.86544,8000,3,19142,651,68505,664,669,2025-09-05T23:26:13.762719,Extracted using real API endpoints
+209,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,"9,000",3 Business Days,$7780.10,$7780.10,0.86446,9000,3,19142,651,68505,665,669,2025-09-05T23:26:14.169538,Extracted using real API endpoints
+210,Flat Greeting Cards,"4.25"" x 5.5""",Front Only,Shrink Wrapping,"10,000",3 Business Days,$8636.65,$8636.65,0.86367,10000,3,19142,651,68505,666,669,2025-09-05T23:26:14.596041,Extracted using real API endpoints
+211,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,10,3 Business Days,$12.32,$12.32,1.23200,10,3,19142,652,68504,114420,669,2025-09-05T23:26:15.014430,Extracted using real API endpoints
+212,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,25,3 Business Days,$15.56,$15.56,0.62240,25,3,19142,652,68504,1169,669,2025-09-05T23:26:15.777633,Extracted using real API endpoints
+213,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,50,3 Business Days,$20.95,$20.95,0.41900,50,3,19142,652,68504,1168,669,2025-09-05T23:26:16.182534,Extracted using real API endpoints
+214,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,75,3 Business Days,$25.34,$25.34,0.33787,75,3,19142,652,68504,1170,669,2025-09-05T23:26:16.598048,Extracted using real API endpoints
+215,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,100,3 Business Days,$29.72,$29.72,0.29720,100,3,19142,652,68504,653,669,2025-09-05T23:26:17.005308,Extracted using real API endpoints
+216,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,125,3 Business Days,$34.10,$34.10,0.27280,125,3,19142,652,68504,1171,669,2025-09-05T23:26:17.420918,Extracted using real API endpoints
+217,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,150,3 Business Days,$38.48,$38.48,0.25653,150,3,19142,652,68504,654,669,2025-09-05T23:26:17.850345,Extracted using real API endpoints
+218,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,175,3 Business Days,$42.86,$42.86,0.24491,175,3,19142,652,68504,1172,669,2025-09-05T23:26:18.272663,Extracted using real API endpoints
+219,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,200,3 Business Days,$47.25,$47.25,0.23625,200,3,19142,652,68504,655,669,2025-09-05T23:26:18.688107,Extracted using real API endpoints
+220,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,250,3 Business Days,$97.59,$97.59,0.39036,250,3,19142,652,68504,1173,669,2025-09-05T23:26:19.097650,Extracted using real API endpoints
+221,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,500,3 Business Days,$102.59,$102.59,0.20518,500,3,19142,652,68504,656,669,2025-09-05T23:26:19.502943,Extracted using real API endpoints
+222,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,"1,000",3 Business Days,$112.59,$112.59,0.11259,1000,3,19142,652,68504,657,669,2025-09-05T23:26:19.938751,Extracted using real API endpoints
+223,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,"2,000",3 Business Days,$160.52,$160.52,0.08026,2000,3,19142,652,68504,658,669,2025-09-05T23:26:20.347506,Extracted using real API endpoints
+224,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,"3,000",3 Business Days,$208.15,$208.15,0.06938,3000,3,19142,652,68504,659,669,2025-09-05T23:26:20.772244,Extracted using real API endpoints
+225,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,"4,000",3 Business Days,$253.11,$253.11,0.06328,4000,3,19142,652,68504,660,669,2025-09-05T23:26:21.195447,Extracted using real API endpoints
+226,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,"5,000",3 Business Days,$296.72,$296.72,0.05934,5000,3,19142,652,68504,661,669,2025-09-05T23:26:21.626734,Extracted using real API endpoints
+227,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,"6,000",3 Business Days,$337.74,$337.74,0.05629,6000,3,19142,652,68504,662,669,2025-09-05T23:26:22.061079,Extracted using real API endpoints
+228,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,"7,000",3 Business Days,$378.75,$378.75,0.05411,7000,3,19142,652,68504,663,669,2025-09-05T23:26:22.465798,Extracted using real API endpoints
+229,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,"8,000",3 Business Days,$419.76,$419.76,0.05247,8000,3,19142,652,68504,664,669,2025-09-05T23:26:22.881744,Extracted using real API endpoints
+230,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,"9,000",3 Business Days,$460.78,$460.78,0.05120,9000,3,19142,652,68504,665,669,2025-09-05T23:26:23.293656,Extracted using real API endpoints
+231,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,None,"10,000",3 Business Days,$501.79,$501.79,0.05018,10000,3,19142,652,68504,666,669,2025-09-05T23:26:23.733422,Extracted using real API endpoints
+232,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,10,3 Business Days,$30.80,$30.80,3.08000,10,3,19142,652,68505,114420,669,2025-09-05T23:26:24.159244,Extracted using real API endpoints
+233,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,25,3 Business Days,$46.47,$46.47,1.85880,25,3,19142,652,68505,1169,669,2025-09-05T23:26:24.582332,Extracted using real API endpoints
+234,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,50,3 Business Days,$72.59,$72.59,1.45180,50,3,19142,652,68505,1168,669,2025-09-05T23:26:25.002252,Extracted using real API endpoints
+235,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,75,3 Business Days,$97.68,$97.68,1.30240,75,3,19142,652,68505,1170,669,2025-09-05T23:26:25.405709,Extracted using real API endpoints
+236,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,100,3 Business Days,$122.78,$122.78,1.22780,100,3,19142,652,68505,653,669,2025-09-05T23:26:25.832789,Extracted using real API endpoints
+237,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,125,3 Business Days,$147.88,$147.88,1.18304,125,3,19142,652,68505,1171,669,2025-09-05T23:26:26.245039,Extracted using real API endpoints
+238,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,150,3 Business Days,$172.98,$172.98,1.15320,150,3,19142,652,68505,654,669,2025-09-05T23:26:26.676688,Extracted using real API endpoints
+239,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,175,3 Business Days,$198.08,$198.08,1.13189,175,3,19142,652,68505,1172,669,2025-09-05T23:26:27.100174,Extracted using real API endpoints
+240,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,200,3 Business Days,$223.18,$223.18,1.11590,200,3,19142,652,68505,655,669,2025-09-05T23:26:27.529434,Extracted using real API endpoints
+241,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,250,3 Business Days,$314.95,$314.95,1.25980,250,3,19142,652,68505,1173,669,2025-09-05T23:26:27.937447,Extracted using real API endpoints
+242,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,500,3 Business Days,$527.12,$527.12,1.05424,500,3,19142,652,68505,656,669,2025-09-05T23:26:28.340576,Extracted using real API endpoints
+243,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,"1,000",3 Business Days,$951.45,$951.45,0.95145,1000,3,19142,652,68505,657,669,2025-09-05T23:26:28.769840,Extracted using real API endpoints
+244,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,"2,000",3 Business Days,$1828.04,$1828.04,0.91402,2000,3,19142,652,68505,658,669,2025-09-05T23:26:29.181974,Extracted using real API endpoints
+245,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,"3,000",3 Business Days,$2704.33,$2704.33,0.90144,3000,3,19142,652,68505,659,669,2025-09-05T23:26:29.609153,Extracted using real API endpoints
+246,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,"4,000",3 Business Days,$3577.94,$3577.94,0.89449,4000,3,19142,652,68505,660,669,2025-09-05T23:26:30.036140,Extracted using real API endpoints
+247,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,"5,000",3 Business Days,$4450.22,$4450.22,0.89004,5000,3,19142,652,68505,661,669,2025-09-05T23:26:30.456094,Extracted using real API endpoints
+248,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,"6,000",3 Business Days,$5319.89,$5319.89,0.88665,6000,3,19142,652,68505,662,669,2025-09-05T23:26:31.228622,Extracted using real API endpoints
+249,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,"7,000",3 Business Days,$6189.56,$6189.56,0.88422,7000,3,19142,652,68505,663,669,2025-09-05T23:26:31.645324,Extracted using real API endpoints
+250,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,"8,000",3 Business Days,$7059.23,$7059.23,0.88240,8000,3,19142,652,68505,664,669,2025-09-05T23:26:32.059152,Extracted using real API endpoints
+251,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,"9,000",3 Business Days,$7928.91,$7928.91,0.88099,9000,3,19142,652,68505,665,669,2025-09-05T23:26:32.462865,Extracted using real API endpoints
+252,Flat Greeting Cards,"4.25"" x 5.5""",Front and Back,Shrink Wrapping,"10,000",3 Business Days,$8798.58,$8798.58,0.87986,10000,3,19142,652,68505,666,669,2025-09-05T23:26:32.884008,Extracted using real API endpoints
+253,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,10,3 Business Days,$13.80,$13.80,1.38000,10,3,646,651,68504,114420,669,2025-09-05T23:26:33.303334,Extracted using real API endpoints
+254,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,25,3 Business Days,$18.25,$18.25,0.73000,25,3,646,651,68504,1169,669,2025-09-05T23:26:33.732043,Extracted using real API endpoints
+255,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,50,3 Business Days,$25.65,$25.65,0.51300,50,3,646,651,68504,1168,669,2025-09-05T23:26:34.139609,Extracted using real API endpoints
+256,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,75,3 Business Days,$31.71,$31.71,0.42280,75,3,646,651,68504,1170,669,2025-09-05T23:26:34.577056,Extracted using real API endpoints
+257,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,100,3 Business Days,$37.76,$37.76,0.37760,100,3,646,651,68504,653,669,2025-09-05T23:26:34.990649,Extracted using real API endpoints
+258,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,125,3 Business Days,$43.82,$43.82,0.35056,125,3,646,651,68504,1171,669,2025-09-05T23:26:35.406667,Extracted using real API endpoints
+259,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,150,3 Business Days,$49.87,$49.87,0.33247,150,3,646,651,68504,654,669,2025-09-05T23:26:35.829643,Extracted using real API endpoints
+260,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,175,3 Business Days,$55.93,$55.93,0.31960,175,3,646,651,68504,1172,669,2025-09-05T23:26:36.232218,Extracted using real API endpoints
+261,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,200,3 Business Days,$61.98,$61.98,0.30990,200,3,646,651,68504,655,669,2025-09-05T23:26:36.660909,Extracted using real API endpoints
+262,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,250,3 Business Days,$63.49,$63.49,0.25396,250,3,646,651,68504,1173,669,2025-09-05T23:26:37.086068,Extracted using real API endpoints
+263,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,500,3 Business Days,$66.74,$66.74,0.13348,500,3,646,651,68504,656,669,2025-09-05T23:26:37.493014,Extracted using real API endpoints
+264,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,"1,000",3 Business Days,$73.25,$73.25,0.07325,1000,3,646,651,68504,657,669,2025-09-05T23:26:37.927325,Extracted using real API endpoints
+265,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,"2,000",3 Business Days,$106.94,$106.94,0.05347,2000,3,646,651,68504,658,669,2025-09-05T23:26:38.345962,Extracted using real API endpoints
+266,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,"3,000",3 Business Days,$140.33,$140.33,0.04678,3000,3,646,651,68504,659,669,2025-09-05T23:26:38.758428,Extracted using real API endpoints
+267,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,"4,000",3 Business Days,$171.04,$171.04,0.04276,4000,3,646,651,68504,660,669,2025-09-05T23:26:39.173077,Extracted using real API endpoints
+268,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,"5,000",3 Business Days,$200.42,$200.42,0.04008,5000,3,646,651,68504,661,669,2025-09-05T23:26:39.604482,Extracted using real API endpoints
+269,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,"6,000",3 Business Days,$228.31,$228.31,0.03805,6000,3,646,651,68504,662,669,2025-09-05T23:26:40.032845,Extracted using real API endpoints
+270,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,"7,000",3 Business Days,$256.19,$256.19,0.03660,7000,3,646,651,68504,663,669,2025-09-05T23:26:40.453084,Extracted using real API endpoints
+271,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,"8,000",3 Business Days,$284.08,$284.08,0.03551,8000,3,646,651,68504,664,669,2025-09-05T23:26:40.859017,Extracted using real API endpoints
+272,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,"9,000",3 Business Days,$311.97,$311.97,0.03466,9000,3,646,651,68504,665,669,2025-09-05T23:26:41.274121,Extracted using real API endpoints
+273,Flat Greeting Cards,"4.25"" x 6""",Front Only,None,"10,000",3 Business Days,$339.86,$339.86,0.03399,10000,3,646,651,68504,666,669,2025-09-05T23:26:41.674013,Extracted using real API endpoints
+274,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,10,3 Business Days,$32.29,$32.29,3.22900,10,3,646,651,68505,114420,669,2025-09-05T23:26:42.078969,Extracted using real API endpoints
+275,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,25,3 Business Days,$49.16,$49.16,1.96640,25,3,646,651,68505,1169,669,2025-09-05T23:26:42.854752,Extracted using real API endpoints
+276,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,50,3 Business Days,$77.29,$77.29,1.54580,50,3,646,651,68505,1168,669,2025-09-05T23:26:43.286924,Extracted using real API endpoints
+277,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,75,3 Business Days,$104.06,$104.06,1.38747,75,3,646,651,68505,1170,669,2025-09-05T23:26:43.751369,Extracted using real API endpoints
+278,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,100,3 Business Days,$130.83,$130.83,1.30830,100,3,646,651,68505,653,669,2025-09-05T23:26:44.216365,Extracted using real API endpoints
+279,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,125,3 Business Days,$157.60,$157.60,1.26080,125,3,646,651,68505,1171,669,2025-09-05T23:26:44.655462,Extracted using real API endpoints
+280,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,150,3 Business Days,$184.37,$184.37,1.22913,150,3,646,651,68505,654,669,2025-09-05T23:26:45.091736,Extracted using real API endpoints
+281,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,175,3 Business Days,$211.14,$211.14,1.20651,175,3,646,651,68505,1172,669,2025-09-05T23:26:45.496629,Extracted using real API endpoints
+282,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,200,3 Business Days,$237.91,$237.91,1.18955,200,3,646,651,68505,655,669,2025-09-05T23:26:45.927036,Extracted using real API endpoints
+283,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,250,3 Business Days,$280.85,$280.85,1.12340,250,3,646,651,68505,1173,669,2025-09-05T23:26:46.335466,Extracted using real API endpoints
+284,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,500,3 Business Days,$491.27,$491.27,0.98254,500,3,646,651,68505,656,669,2025-09-05T23:26:46.773323,Extracted using real API endpoints
+285,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,"1,000",3 Business Days,$912.11,$912.11,0.91211,1000,3,646,651,68505,657,669,2025-09-05T23:26:47.182847,Extracted using real API endpoints
+286,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,"2,000",3 Business Days,$1774.46,$1774.46,0.88723,2000,3,646,651,68505,658,669,2025-09-05T23:26:47.628771,Extracted using real API endpoints
+287,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,"3,000",3 Business Days,$2636.51,$2636.51,0.87884,3000,3,646,651,68505,659,669,2025-09-05T23:26:48.058422,Extracted using real API endpoints
+288,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,"4,000",3 Business Days,$3495.88,$3495.88,0.87397,4000,3,646,651,68505,660,669,2025-09-05T23:26:48.487833,Extracted using real API endpoints
+289,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,"5,000",3 Business Days,$4353.91,$4353.91,0.87078,5000,3,646,651,68505,661,669,2025-09-05T23:26:48.900809,Extracted using real API endpoints
+290,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,"6,000",3 Business Days,$5210.46,$5210.46,0.86841,6000,3,646,651,68505,662,669,2025-09-05T23:26:49.310787,Extracted using real API endpoints
+291,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,"7,000",3 Business Days,$6067.01,$6067.01,0.86672,7000,3,646,651,68505,663,669,2025-09-05T23:26:49.725633,Extracted using real API endpoints
+292,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,"8,000",3 Business Days,$6923.55,$6923.55,0.86544,8000,3,646,651,68505,664,669,2025-09-05T23:26:50.157372,Extracted using real API endpoints
+293,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,"9,000",3 Business Days,$7780.10,$7780.10,0.86446,9000,3,646,651,68505,665,669,2025-09-05T23:26:50.562392,Extracted using real API endpoints
+294,Flat Greeting Cards,"4.25"" x 6""",Front Only,Shrink Wrapping,"10,000",3 Business Days,$8636.65,$8636.65,0.86367,10000,3,646,651,68505,666,669,2025-09-05T23:26:50.982961,Extracted using real API endpoints
+295,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,10,3 Business Days,$15.15,$15.15,1.51500,10,3,646,652,68504,114420,669,2025-09-05T23:26:51.760576,Extracted using real API endpoints
+296,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,25,3 Business Days,$21.63,$21.63,0.86520,25,3,646,652,68504,1169,669,2025-09-05T23:26:52.188008,Extracted using real API endpoints
+297,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,50,3 Business Days,$32.43,$32.43,0.64860,50,3,646,652,68504,1168,669,2025-09-05T23:26:52.610720,Extracted using real API endpoints
+298,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,75,3 Business Days,$41.19,$41.19,0.54920,75,3,646,652,68504,1170,669,2025-09-05T23:26:53.035940,Extracted using real API endpoints
+299,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,100,3 Business Days,$49.96,$49.96,0.49960,100,3,646,652,68504,653,669,2025-09-05T23:26:53.445154,Extracted using real API endpoints
+300,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,125,3 Business Days,$58.72,$58.72,0.46976,125,3,646,652,68504,1171,669,2025-09-05T23:26:53.858461,Extracted using real API endpoints
+301,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,150,3 Business Days,$67.48,$67.48,0.44987,150,3,646,652,68504,654,669,2025-09-05T23:26:54.263905,Extracted using real API endpoints
+302,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,175,3 Business Days,$76.25,$76.25,0.43571,175,3,646,652,68504,1172,669,2025-09-05T23:26:54.705437,Extracted using real API endpoints
+303,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,200,3 Business Days,$85.01,$85.01,0.42505,200,3,646,652,68504,655,669,2025-09-05T23:26:55.150496,Extracted using real API endpoints
+304,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,250,3 Business Days,$97.59,$97.59,0.39036,250,3,646,652,68504,1173,669,2025-09-05T23:26:55.552337,Extracted using real API endpoints
+305,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,500,3 Business Days,$102.59,$102.59,0.20518,500,3,646,652,68504,656,669,2025-09-05T23:26:55.965200,Extracted using real API endpoints
+306,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,"1,000",3 Business Days,$112.59,$112.59,0.11259,1000,3,646,652,68504,657,669,2025-09-05T23:26:56.406237,Extracted using real API endpoints
+307,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,"2,000",3 Business Days,$160.52,$160.52,0.08026,2000,3,646,652,68504,658,669,2025-09-05T23:26:56.816731,Extracted using real API endpoints
+308,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,"3,000",3 Business Days,$208.15,$208.15,0.06938,3000,3,646,652,68504,659,669,2025-09-05T23:26:57.233822,Extracted using real API endpoints
+309,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,"4,000",3 Business Days,$253.11,$253.11,0.06328,4000,3,646,652,68504,660,669,2025-09-05T23:26:57.644421,Extracted using real API endpoints
+310,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,"5,000",3 Business Days,$296.72,$296.72,0.05934,5000,3,646,652,68504,661,669,2025-09-05T23:26:58.052855,Extracted using real API endpoints
+311,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,"6,000",3 Business Days,$337.74,$337.74,0.05629,6000,3,646,652,68504,662,669,2025-09-05T23:26:58.465757,Extracted using real API endpoints
+312,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,"7,000",3 Business Days,$378.75,$378.75,0.05411,7000,3,646,652,68504,663,669,2025-09-05T23:26:58.877065,Extracted using real API endpoints
+313,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,"8,000",3 Business Days,$419.76,$419.76,0.05247,8000,3,646,652,68504,664,669,2025-09-05T23:26:59.302691,Extracted using real API endpoints
+314,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,"9,000",3 Business Days,$460.78,$460.78,0.05120,9000,3,646,652,68504,665,669,2025-09-05T23:26:59.721779,Extracted using real API endpoints
+315,Flat Greeting Cards,"4.25"" x 6""",Front and Back,None,"10,000",3 Business Days,$501.79,$501.79,0.05018,10000,3,646,652,68504,666,669,2025-09-05T23:27:00.121866,Extracted using real API endpoints
+316,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,10,3 Business Days,$33.64,$33.64,3.36400,10,3,646,652,68505,114420,669,2025-09-05T23:27:00.542078,Extracted using real API endpoints
+317,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,25,3 Business Days,$52.55,$52.55,2.10200,25,3,646,652,68505,1169,669,2025-09-05T23:27:00.964057,Extracted using real API endpoints
+318,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,50,3 Business Days,$84.06,$84.06,1.68120,50,3,646,652,68505,1168,669,2025-09-05T23:27:01.374694,Extracted using real API endpoints
+319,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,75,3 Business Days,$113.54,$113.54,1.51387,75,3,646,652,68505,1170,669,2025-09-05T23:27:01.792354,Extracted using real API endpoints
+320,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,100,3 Business Days,$143.02,$143.02,1.43020,100,3,646,652,68505,653,669,2025-09-05T23:27:02.215000,Extracted using real API endpoints
+321,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,125,3 Business Days,$172.50,$172.50,1.38000,125,3,646,652,68505,1171,669,2025-09-05T23:27:02.638811,Extracted using real API endpoints
+322,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,150,3 Business Days,$201.98,$201.98,1.34653,150,3,646,652,68505,654,669,2025-09-05T23:27:03.055488,Extracted using real API endpoints
+323,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,175,3 Business Days,$231.46,$231.46,1.32263,175,3,646,652,68505,1172,669,2025-09-05T23:27:03.463874,Extracted using real API endpoints
+324,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,200,3 Business Days,$260.94,$260.94,1.30470,200,3,646,652,68505,655,669,2025-09-05T23:27:03.872407,Extracted using real API endpoints
+325,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,250,3 Business Days,$314.95,$314.95,1.25980,250,3,646,652,68505,1173,669,2025-09-05T23:27:04.282866,Extracted using real API endpoints
+326,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,500,3 Business Days,$527.12,$527.12,1.05424,500,3,646,652,68505,656,669,2025-09-05T23:27:04.694409,Extracted using real API endpoints
+327,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,"1,000",3 Business Days,$951.45,$951.45,0.95145,1000,3,646,652,68505,657,669,2025-09-05T23:27:05.101452,Extracted using real API endpoints
+328,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,"2,000",3 Business Days,$1828.04,$1828.04,0.91402,2000,3,646,652,68505,658,669,2025-09-05T23:27:05.506951,Extracted using real API endpoints
+329,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,"3,000",3 Business Days,$2704.33,$2704.33,0.90144,3000,3,646,652,68505,659,669,2025-09-05T23:27:05.917447,Extracted using real API endpoints
+330,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,"4,000",3 Business Days,$3577.94,$3577.94,0.89449,4000,3,646,652,68505,660,669,2025-09-05T23:27:06.336852,Extracted using real API endpoints
+331,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,"5,000",3 Business Days,$4450.22,$4450.22,0.89004,5000,3,646,652,68505,661,669,2025-09-05T23:27:06.757090,Extracted using real API endpoints
+332,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,"6,000",3 Business Days,$5319.89,$5319.89,0.88665,6000,3,646,652,68505,662,669,2025-09-05T23:27:07.168241,Extracted using real API endpoints
+333,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,"7,000",3 Business Days,$6189.56,$6189.56,0.88422,7000,3,646,652,68505,663,669,2025-09-05T23:27:07.615043,Extracted using real API endpoints
+334,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,"8,000",3 Business Days,$7059.23,$7059.23,0.88240,8000,3,646,652,68505,664,669,2025-09-05T23:27:08.019445,Extracted using real API endpoints
+335,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,"9,000",3 Business Days,$7928.91,$7928.91,0.88099,9000,3,646,652,68505,665,669,2025-09-05T23:27:08.441154,Extracted using real API endpoints
+336,Flat Greeting Cards,"4.25"" x 6""",Front and Back,Shrink Wrapping,"10,000",3 Business Days,$8798.58,$8798.58,0.87986,10000,3,646,652,68505,666,669,2025-09-05T23:27:08.860233,Extracted using real API endpoints
+337,Flat Greeting Cards,"5"" x 7""",Front Only,None,10,3 Business Days,$13.80,$13.80,1.38000,10,3,647,651,68504,114420,669,2025-09-05T23:27:09.283844,Extracted using real API endpoints
+338,Flat Greeting Cards,"5"" x 7""",Front Only,None,25,3 Business Days,$18.25,$18.25,0.73000,25,3,647,651,68504,1169,669,2025-09-05T23:27:09.717719,Extracted using real API endpoints
+339,Flat Greeting Cards,"5"" x 7""",Front Only,None,50,3 Business Days,$25.65,$25.65,0.51300,50,3,647,651,68504,1168,669,2025-09-05T23:27:10.135156,Extracted using real API endpoints
+340,Flat Greeting Cards,"5"" x 7""",Front Only,None,75,3 Business Days,$31.71,$31.71,0.42280,75,3,647,651,68504,1170,669,2025-09-05T23:27:10.557910,Extracted using real API endpoints
+341,Flat Greeting Cards,"5"" x 7""",Front Only,None,100,3 Business Days,$37.76,$37.76,0.37760,100,3,647,651,68504,653,669,2025-09-05T23:27:10.986685,Extracted using real API endpoints
+342,Flat Greeting Cards,"5"" x 7""",Front Only,None,125,3 Business Days,$43.82,$43.82,0.35056,125,3,647,651,68504,1171,669,2025-09-05T23:27:11.403823,Extracted using real API endpoints
+343,Flat Greeting Cards,"5"" x 7""",Front Only,None,150,3 Business Days,$49.87,$49.87,0.33247,150,3,647,651,68504,654,669,2025-09-05T23:27:11.817860,Extracted using real API endpoints
+344,Flat Greeting Cards,"5"" x 7""",Front Only,None,175,3 Business Days,$55.93,$55.93,0.31960,175,3,647,651,68504,1172,669,2025-09-05T23:27:12.226462,Extracted using real API endpoints
+345,Flat Greeting Cards,"5"" x 7""",Front Only,None,200,3 Business Days,$61.98,$61.98,0.30990,200,3,647,651,68504,655,669,2025-09-05T23:27:12.988326,Extracted using real API endpoints
+346,Flat Greeting Cards,"5"" x 7""",Front Only,None,250,3 Business Days,$103.57,$103.57,0.41428,250,3,647,651,68504,1173,669,2025-09-05T23:27:13.412628,Extracted using real API endpoints
+347,Flat Greeting Cards,"5"" x 7""",Front Only,None,500,3 Business Days,$109.43,$109.43,0.21886,500,3,647,651,68504,656,669,2025-09-05T23:27:13.835632,Extracted using real API endpoints
+348,Flat Greeting Cards,"5"" x 7""",Front Only,None,"1,000",3 Business Days,$121.14,$121.14,0.12114,1000,3,647,651,68504,657,669,2025-09-05T23:27:14.241369,Extracted using real API endpoints
+349,Flat Greeting Cards,"5"" x 7""",Front Only,None,"2,000",3 Business Days,$175.36,$175.36,0.08768,2000,3,647,651,68504,658,669,2025-09-05T23:27:14.662716,Extracted using real API endpoints
+350,Flat Greeting Cards,"5"" x 7""",Front Only,None,"3,000",3 Business Days,$226.89,$226.89,0.07563,3000,3,647,651,68504,659,669,2025-09-05T23:27:15.094457,Extracted using real API endpoints
+351,Flat Greeting Cards,"5"" x 7""",Front Only,None,"4,000",3 Business Days,$278.43,$278.43,0.06961,4000,3,647,651,68504,660,669,2025-09-05T23:27:15.517788,Extracted using real API endpoints
+352,Flat Greeting Cards,"5"" x 7""",Front Only,None,"5,000",3 Business Days,$329.97,$329.97,0.06599,5000,3,647,651,68504,661,669,2025-09-05T23:27:15.936027,Extracted using real API endpoints
+353,Flat Greeting Cards,"5"" x 7""",Front Only,None,"6,000",3 Business Days,$378.82,$378.82,0.06314,6000,3,647,651,68504,662,669,2025-09-05T23:27:16.346403,Extracted using real API endpoints
+354,Flat Greeting Cards,"5"" x 7""",Front Only,None,"7,000",3 Business Days,$423.67,$423.67,0.06052,7000,3,647,651,68504,663,669,2025-09-05T23:27:16.764139,Extracted using real API endpoints
+355,Flat Greeting Cards,"5"" x 7""",Front Only,None,"8,000",3 Business Days,$468.51,$468.51,0.05856,8000,3,647,651,68504,664,669,2025-09-05T23:27:17.168363,Extracted using real API endpoints
+356,Flat Greeting Cards,"5"" x 7""",Front Only,None,"9,000",3 Business Days,$513.35,$513.35,0.05704,9000,3,647,651,68504,665,669,2025-09-05T23:27:17.571889,Extracted using real API endpoints
+357,Flat Greeting Cards,"5"" x 7""",Front Only,None,"10,000",3 Business Days,$558.20,$558.20,0.05582,10000,3,647,651,68504,666,669,2025-09-05T23:27:17.985320,Extracted using real API endpoints
+358,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,10,3 Business Days,$32.29,$32.29,3.22900,10,3,647,651,68505,114420,669,2025-09-05T23:27:18.390228,Extracted using real API endpoints
+359,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,25,3 Business Days,$49.16,$49.16,1.96640,25,3,647,651,68505,1169,669,2025-09-05T23:27:18.814264,Extracted using real API endpoints
+360,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,50,3 Business Days,$77.29,$77.29,1.54580,50,3,647,651,68505,1168,669,2025-09-05T23:27:19.259019,Extracted using real API endpoints
+361,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,75,3 Business Days,$104.06,$104.06,1.38747,75,3,647,651,68505,1170,669,2025-09-05T23:27:19.676266,Extracted using real API endpoints
+362,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,100,3 Business Days,$130.83,$130.83,1.30830,100,3,647,651,68505,653,669,2025-09-05T23:27:20.454914,Extracted using real API endpoints
+363,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,125,3 Business Days,$157.60,$157.60,1.26080,125,3,647,651,68505,1171,669,2025-09-05T23:27:20.874200,Extracted using real API endpoints
+364,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,150,3 Business Days,$184.37,$184.37,1.22913,150,3,647,651,68505,654,669,2025-09-05T23:27:21.285362,Extracted using real API endpoints
+365,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,175,3 Business Days,$211.14,$211.14,1.20651,175,3,647,651,68505,1172,669,2025-09-05T23:27:21.703542,Extracted using real API endpoints
+366,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,200,3 Business Days,$237.91,$237.91,1.18955,200,3,647,651,68505,655,669,2025-09-05T23:27:22.127221,Extracted using real API endpoints
+367,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,250,3 Business Days,$320.94,$320.94,1.28376,250,3,647,651,68505,1173,669,2025-09-05T23:27:22.547559,Extracted using real API endpoints
+368,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,500,3 Business Days,$533.96,$533.96,1.06792,500,3,647,651,68505,656,669,2025-09-05T23:27:22.952158,Extracted using real API endpoints
+369,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,"1,000",3 Business Days,$960.00,$960.00,0.96000,1000,3,647,651,68505,657,669,2025-09-05T23:27:23.361610,Extracted using real API endpoints
+370,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,"2,000",3 Business Days,$1842.87,$1842.87,0.92144,2000,3,647,651,68505,658,669,2025-09-05T23:27:23.791350,Extracted using real API endpoints
+371,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,"3,000",3 Business Days,$2723.07,$2723.07,0.90769,3000,3,647,651,68505,659,669,2025-09-05T23:27:24.208879,Extracted using real API endpoints
+372,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,"4,000",3 Business Days,$3603.26,$3603.26,0.90082,4000,3,647,651,68505,660,669,2025-09-05T23:27:24.616281,Extracted using real API endpoints
+373,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,"5,000",3 Business Days,$4483.46,$4483.46,0.89669,5000,3,647,651,68505,661,669,2025-09-05T23:27:25.033491,Extracted using real API endpoints
+374,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,"6,000",3 Business Days,$5360.98,$5360.98,0.89350,6000,3,647,651,68505,662,669,2025-09-05T23:27:25.460449,Extracted using real API endpoints
+375,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,"7,000",3 Business Days,$6234.48,$6234.48,0.89064,7000,3,647,651,68505,663,669,2025-09-05T23:27:25.892411,Extracted using real API endpoints
+376,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,"8,000",3 Business Days,$7107.98,$7107.98,0.88850,8000,3,647,651,68505,664,669,2025-09-05T23:27:26.304643,Extracted using real API endpoints
+377,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,"9,000",3 Business Days,$7981.48,$7981.48,0.88683,9000,3,647,651,68505,665,669,2025-09-05T23:27:26.727612,Extracted using real API endpoints
+378,Flat Greeting Cards,"5"" x 7""",Front Only,Shrink Wrapping,"10,000",3 Business Days,$8854.99,$8854.99,0.88550,10000,3,647,651,68505,666,669,2025-09-05T23:27:27.140470,Extracted using real API endpoints
+379,Flat Greeting Cards,"5"" x 7""",Front and Back,None,10,3 Business Days,$15.15,$15.15,1.51500,10,3,647,652,68504,114420,669,2025-09-05T23:27:27.551858,Extracted using real API endpoints
+380,Flat Greeting Cards,"5"" x 7""",Front and Back,None,25,3 Business Days,$21.63,$21.63,0.86520,25,3,647,652,68504,1169,669,2025-09-05T23:27:27.961696,Extracted using real API endpoints
+381,Flat Greeting Cards,"5"" x 7""",Front and Back,None,50,3 Business Days,$32.43,$32.43,0.64860,50,3,647,652,68504,1168,669,2025-09-05T23:27:28.368383,Extracted using real API endpoints
+382,Flat Greeting Cards,"5"" x 7""",Front and Back,None,75,3 Business Days,$41.19,$41.19,0.54920,75,3,647,652,68504,1170,669,2025-09-05T23:27:28.806661,Extracted using real API endpoints
+383,Flat Greeting Cards,"5"" x 7""",Front and Back,None,100,3 Business Days,$49.96,$49.96,0.49960,100,3,647,652,68504,653,669,2025-09-05T23:27:29.223604,Extracted using real API endpoints
+384,Flat Greeting Cards,"5"" x 7""",Front and Back,None,125,3 Business Days,$58.72,$58.72,0.46976,125,3,647,652,68504,1171,669,2025-09-05T23:27:29.640646,Extracted using real API endpoints
+385,Flat Greeting Cards,"5"" x 7""",Front and Back,None,150,3 Business Days,$67.48,$67.48,0.44987,150,3,647,652,68504,654,669,2025-09-05T23:27:30.069705,Extracted using real API endpoints
+386,Flat Greeting Cards,"5"" x 7""",Front and Back,None,175,3 Business Days,$76.25,$76.25,0.43571,175,3,647,652,68504,1172,669,2025-09-05T23:27:30.483267,Extracted using real API endpoints
+387,Flat Greeting Cards,"5"" x 7""",Front and Back,None,200,3 Business Days,$85.01,$85.01,0.42505,200,3,647,652,68504,655,669,2025-09-05T23:27:30.892104,Extracted using real API endpoints
+388,Flat Greeting Cards,"5"" x 7""",Front and Back,None,250,3 Business Days,$164.95,$164.95,0.65980,250,3,647,652,68504,1173,669,2025-09-05T23:27:31.302466,Extracted using real API endpoints
+389,Flat Greeting Cards,"5"" x 7""",Front and Back,None,500,3 Business Days,$173.95,$173.95,0.34790,500,3,647,652,68504,656,669,2025-09-05T23:27:31.730002,Extracted using real API endpoints
+390,Flat Greeting Cards,"5"" x 7""",Front and Back,None,"1,000",3 Business Days,$191.96,$191.96,0.19196,1000,3,647,652,68504,657,669,2025-09-05T23:27:32.152848,Extracted using real API endpoints
+391,Flat Greeting Cards,"5"" x 7""",Front and Back,None,"2,000",3 Business Days,$271.80,$271.80,0.13590,2000,3,647,652,68504,658,669,2025-09-05T23:27:32.575474,Extracted using real API endpoints
+392,Flat Greeting Cards,"5"" x 7""",Front and Back,None,"3,000",3 Business Days,$348.97,$348.97,0.11632,3000,3,647,652,68504,659,669,2025-09-05T23:27:32.989006,Extracted using real API endpoints
+393,Flat Greeting Cards,"5"" x 7""",Front and Back,None,"4,000",3 Business Days,$426.14,$426.14,0.10654,4000,3,647,652,68504,660,669,2025-09-05T23:27:33.406208,Extracted using real API endpoints
+394,Flat Greeting Cards,"5"" x 7""",Front and Back,None,"5,000",3 Business Days,$503.31,$503.31,0.10066,5000,3,647,652,68504,661,669,2025-09-05T23:27:33.831285,Extracted using real API endpoints
+395,Flat Greeting Cards,"5"" x 7""",Front and Back,None,"6,000",3 Business Days,$575.80,$575.80,0.09597,6000,3,647,652,68504,662,669,2025-09-05T23:27:34.293458,Extracted using real API endpoints
+396,Flat Greeting Cards,"5"" x 7""",Front and Back,None,"7,000",3 Business Days,$644.27,$644.27,0.09204,7000,3,647,652,68504,663,669,2025-09-05T23:27:34.745832,Extracted using real API endpoints
+397,Flat Greeting Cards,"5"" x 7""",Front and Back,None,"8,000",3 Business Days,$712.74,$712.74,0.08909,8000,3,647,652,68504,664,669,2025-09-05T23:27:35.171626,Extracted using real API endpoints
+398,Flat Greeting Cards,"5"" x 7""",Front and Back,None,"9,000",3 Business Days,$781.21,$781.21,0.08680,9000,3,647,652,68504,665,669,2025-09-05T23:27:35.573304,Extracted using real API endpoints
+399,Flat Greeting Cards,"5"" x 7""",Front and Back,None,"10,000",3 Business Days,$849.68,$849.68,0.08497,10000,3,647,652,68504,666,669,2025-09-05T23:27:35.993990,Extracted using real API endpoints
+400,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,10,3 Business Days,$33.64,$33.64,3.36400,10,3,647,652,68505,114420,669,2025-09-05T23:27:36.404165,Extracted using real API endpoints
+401,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,25,3 Business Days,$52.55,$52.55,2.10200,25,3,647,652,68505,1169,669,2025-09-05T23:27:36.832683,Extracted using real API endpoints
+402,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,50,3 Business Days,$84.06,$84.06,1.68120,50,3,647,652,68505,1168,669,2025-09-05T23:27:37.244871,Extracted using real API endpoints
+403,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,75,3 Business Days,$113.54,$113.54,1.51387,75,3,647,652,68505,1170,669,2025-09-05T23:27:37.667435,Extracted using real API endpoints
+404,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,100,3 Business Days,$143.02,$143.02,1.43020,100,3,647,652,68505,653,669,2025-09-05T23:27:38.437420,Extracted using real API endpoints
+405,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,125,3 Business Days,$172.50,$172.50,1.38000,125,3,647,652,68505,1171,669,2025-09-05T23:27:38.864221,Extracted using real API endpoints
+406,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,150,3 Business Days,$201.98,$201.98,1.34653,150,3,647,652,68505,654,669,2025-09-05T23:27:39.296859,Extracted using real API endpoints
+407,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,175,3 Business Days,$231.46,$231.46,1.32263,175,3,647,652,68505,1172,669,2025-09-05T23:27:39.704656,Extracted using real API endpoints
+408,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,200,3 Business Days,$260.94,$260.94,1.30470,200,3,647,652,68505,655,669,2025-09-05T23:27:40.118203,Extracted using real API endpoints
+409,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,250,3 Business Days,$382.31,$382.31,1.52924,250,3,647,652,68505,1173,669,2025-09-05T23:27:40.521728,Extracted using real API endpoints
+410,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,500,3 Business Days,$598.48,$598.48,1.19696,500,3,647,652,68505,656,669,2025-09-05T23:27:40.931267,Extracted using real API endpoints
+411,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,"1,000",3 Business Days,$1030.81,$1030.81,1.03081,1000,3,647,652,68505,657,669,2025-09-05T23:27:41.352817,Extracted using real API endpoints
+412,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,"2,000",3 Business Days,$1939.32,$1939.32,0.96966,2000,3,647,652,68505,658,669,2025-09-05T23:27:41.761787,Extracted using real API endpoints
+413,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,"3,000",3 Business Days,$2845.15,$2845.15,0.94838,3000,3,647,652,68505,659,669,2025-09-05T23:27:42.191381,Extracted using real API endpoints
+414,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,"4,000",3 Business Days,$3750.98,$3750.98,0.93775,4000,3,647,652,68505,660,669,2025-09-05T23:27:42.620133,Extracted using real API endpoints
+415,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,"5,000",3 Business Days,$4656.81,$4656.81,0.93136,5000,3,647,652,68505,661,669,2025-09-05T23:27:43.034583,Extracted using real API endpoints
+416,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,"6,000",3 Business Days,$5557.95,$5557.95,0.92633,6000,3,647,652,68505,662,669,2025-09-05T23:27:43.800561,Extracted using real API endpoints
+417,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,"7,000",3 Business Days,$6455.08,$6455.08,0.92215,7000,3,647,652,68505,663,669,2025-09-05T23:27:44.217545,Extracted using real API endpoints
+418,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,"8,000",3 Business Days,$7352.21,$7352.21,0.91903,8000,3,647,652,68505,664,669,2025-09-05T23:27:44.628295,Extracted using real API endpoints
+419,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,"9,000",3 Business Days,$8249.34,$8249.34,0.91659,9000,3,647,652,68505,665,669,2025-09-05T23:27:45.054584,Extracted using real API endpoints
+420,Flat Greeting Cards,"5"" x 7""",Front and Back,Shrink Wrapping,"10,000",3 Business Days,$9146.47,$9146.47,0.91465,10000,3,647,652,68505,666,669,2025-09-05T23:27:45.476133,Extracted using real API endpoints

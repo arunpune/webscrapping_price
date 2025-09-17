@@ -63,8 +63,10 @@ class PriceExtractor:
         logger.info(f"Excluding options: {exclude_options}")
         logger.info(f"Excluding sub-options: {suboptions_to_exclude}")
 
-        # Filter out excluded options and sub-options
+        # Filter out excluded options and sub-options, but keep track of defaults for excluded options
         filtered_options = {}
+        excluded_option_defaults = {}
+
         for name, values in options.items():
             if name not in exclude_options:
                 # Filter out excluded sub-options
@@ -76,6 +78,11 @@ class PriceExtractor:
                         logger.info(f"Option '{name}': excluded {len(excluded_ids)} sub-options, kept {len(filtered_values)}")
                 else:
                     filtered_options[name] = values
+            else:
+                # Store default value for excluded option
+                if values:
+                    excluded_option_defaults[name] = values[0]  # Use first option as default
+                    logger.info(f"Option '{name}': excluded, using default '{values[0]['text']}' (ID: {values[0]['id']})")
         
         # Calculate total combinations
         total_combinations = 1
@@ -134,8 +141,14 @@ class PriceExtractor:
                     f"Processing combination {combination_count:,}/{total_combinations:,}"
                 )
 
+            # Add excluded option defaults to the options dictionary
+            complete_options_dict = options_dict.copy()
+            for excluded_name, default_option in excluded_option_defaults.items():
+                complete_options_dict[excluded_name] = default_option['id']
+                logger.debug(f"Using default for excluded option '{excluded_name}': {default_option['text']} (ID: {default_option['id']})")
+
             # Make API call
-            api_result = self._make_api_call(product_id, options_dict, attr_mappings)
+            api_result = self._make_api_call(product_id, complete_options_dict, attr_mappings, exclude_options)
             
             if api_result['success']:
                 result = {
@@ -191,7 +204,7 @@ class PriceExtractor:
         
         return extraction_result
     
-    def _make_api_call(self, product_id: str, options_dict: Dict[str, str], attr_mappings: Dict[str, str]) -> Dict[str, Any]:
+    def _make_api_call(self, product_id: str, options_dict: Dict[str, str], attr_mappings: Dict[str, str], exclude_options: List[str] = None) -> Dict[str, Any]:
         """Make API call to get price for specific combination"""
 
         # Build payload with correct attribute mappings
@@ -202,17 +215,46 @@ class PriceExtractor:
             if attr_name:
                 payload[attr_name] = option_id
             else:
-                # Try to guess attribute mapping if not found
-                if 'quantity' in option_name.lower():
+                # Enhanced attribute mapping with strict order and validation
+                if ('time' in option_name.lower() or 'turnaround' in option_name.lower() or
+                    'rush' in option_name.lower() or 'day' in option_name.lower() or
+                    ('business' in option_name.lower() and 'day' in option_name.lower())):
+                    payload['attr6'] = option_id
+                    logger.info(f"🕒 Printing time mapped: {option_name} = {option_id} → attr6")
+                elif 'quantity' in option_name.lower():
                     payload['attr5'] = option_id
-                elif 'size' in option_name.lower():
+                    logger.info(f"📊 Quantity mapped: {option_name} = {option_id} → attr5")
+                elif 'size' in option_name.lower() or 'format' in option_name.lower():
                     payload['attr3'] = option_id
-                elif 'paper' in option_name.lower():
+                    logger.info(f"📏 Size mapped: {option_name} = {option_id} → attr3")
+                elif 'paper' in option_name.lower() or 'material' in option_name.lower() or 'stock' in option_name.lower():
                     payload['attr1'] = option_id
-                elif 'page' in option_name.lower() or 'side' in option_name.lower():
+                    logger.info(f"📄 Paper mapped: {option_name} = {option_id} → attr1")
+                elif ('page' in option_name.lower() or 'side' in option_name.lower() or
+                      'print' in option_name.lower()) and 'time' not in option_name.lower():
                     payload['attr4'] = option_id
-                elif 'bundling' in option_name.lower():
+                    logger.info(f"🖨️ Printed side mapped: {option_name} = {option_id} → attr4")
+                elif 'bundling' in option_name.lower() or 'binding' in option_name.lower():
                     payload['attr400'] = option_id
+                    logger.info(f"📦 Bundling mapped: {option_name} = {option_id} → attr400")
+                else:
+                    # Only warn if this option is not excluded
+                    if exclude_options and option_name not in exclude_options:
+                        logger.warning(f"⚠️ Unmapped option: {option_name} = {option_id} (skipping)")
+                    elif exclude_options and option_name in exclude_options:
+                        logger.debug(f"Skipping excluded option: {option_name} = {option_id}")
+                    else:
+                        logger.warning(f"⚠️ Unmapped option: {option_name} = {option_id} (skipping)")
+
+        # Validate payload before sending to prevent 412 errors
+        validation_result = self._validate_extraction_payload(payload, options_dict)
+        if not validation_result['valid']:
+            logger.error(f"❌ Invalid payload detected: {validation_result['error']}")
+            return {
+                'success': False,
+                'error': f"Payload validation failed: {validation_result['error']}",
+                'payload': payload
+            }
 
         logger.debug(f"API Call Payload: {payload}")
 
@@ -231,21 +273,48 @@ class PriceExtractor:
             if response.status_code == 200:
                 data = response.json()
                 price = data.get('price', 'N/A')
+                turnaround = data.get('turnaround', 'N/A')
+
+                # Create a unique combination key for price validation with printing time focus
+                printing_time_option = None
+                quantity_option = None
+
+                for option_name, option_id in options_dict.items():
+                    if 'time' in option_name.lower() or 'day' in option_name.lower() or 'turnaround' in option_name.lower():
+                        printing_time_option = f"{option_name}:{option_id}"
+                    elif 'quantity' in option_name.lower() or any(char.isdigit() for char in option_name):
+                        quantity_option = f"{option_name}:{option_id}"
+
+                combo_key = f"Q:{quantity_option}_T:{printing_time_option}"
 
                 if price != 'N/A' and price != '20':  # Check for the $20 default issue
-                    logger.info(f"✅ API Success: ${price} for combination {options_dict}")
+                    logger.info(f"✅ API Success: ${price} (turnaround: {turnaround}) for {combo_key}")
+
+                    # Special logging for printing time validation
+                    if printing_time_option:
+                        logger.info(f"🕒 Printing time price: {printing_time_option} → ${price}")
                 else:
-                    logger.warning(f"⚠️ Suspicious price: ${price} for combination {options_dict}")
+                    logger.warning(f"⚠️ Suspicious price: ${price} for {combo_key}")
+
+                # Enhanced logging for printing time debugging
+                logger.debug(f"Full combination: {options_dict}")
+                logger.debug(f"API payload: {payload}")
+                logger.debug(f"Price: ${price}, Turnaround: {turnaround}")
+
+                # Validate printing time is actually affecting price
+                if printing_time_option and 'attr6' in payload:
+                    logger.info(f"🔍 Printing time validation: attr6={payload['attr6']} → ${price}")
 
                 return {
                     'success': True,
                     'price': price,
                     'total_price': data.get('total_price', 'N/A'),
                     'qty': data.get('qty', 'N/A'),
-                    'turnaround': data.get('turnaround', 'N/A'),
+                    'turnaround': turnaround,
                     'unit_price': data.get('unit_price', 'N/A'),
                     'payload': payload,
-                    'full_response': data
+                    'full_response': data,
+                    'combination_key': combo_key
                 }
             else:
                 error_msg = f'HTTP {response.status_code}: {response.text[:200]}'
@@ -270,6 +339,49 @@ class PriceExtractor:
                 'error': f'JSON decode error: {e}',
                 'payload': payload
             }
+
+    def _validate_extraction_payload(self, payload: Dict[str, Any], options_dict: Dict[str, str]) -> Dict[str, Any]:
+        """Validate payload to prevent 412 errors during extraction"""
+
+        # Check for common mismatches that cause 412 errors
+        validation_errors = []
+
+        # Check if printing time IDs are being used for wrong attributes
+        printing_time_ids = set()
+        for option_name, option_id in options_dict.items():
+            if 'time' in option_name.lower() or 'day' in option_name.lower():
+                printing_time_ids.add(option_id)
+
+        # Validate attr4 (printed side) doesn't use printing time IDs
+        if 'attr4' in payload and payload['attr4'] in printing_time_ids:
+            validation_errors.append(f"attr4 (printed side) using printing time ID {payload['attr4']}")
+
+        # Validate attr6 (printing time) doesn't use printed side IDs
+        printed_side_ids = set()
+        for option_name, option_id in options_dict.items():
+            if ('side' in option_name.lower() or 'page' in option_name.lower()) and 'time' not in option_name.lower():
+                printed_side_ids.add(option_id)
+
+        if 'attr6' in payload and payload['attr6'] in printed_side_ids:
+            validation_errors.append(f"attr6 (printing time) using printed side ID {payload['attr6']}")
+
+        # Check for duplicate IDs across different attributes
+        used_ids = {}
+        for attr, value in payload.items():
+            if attr.startswith('attr') and attr != 'product_id':
+                if value in used_ids:
+                    validation_errors.append(f"ID {value} used for both {used_ids[value]} and {attr}")
+                else:
+                    used_ids[value] = attr
+
+        if validation_errors:
+            return {
+                'valid': False,
+                'error': '; '.join(validation_errors),
+                'payload': payload
+            }
+
+        return {'valid': True}
     
     def _create_formatted_csv(self, results: List[Dict], product_name: str, options: Dict[str, List]) -> Path:
         """Create formatted CSV with options as columns and quantities as rows"""

@@ -68,6 +68,14 @@
                 </div>
                 <div class="col-md-4 text-end">
                     <span id="progressStats">0 / 0</span>
+                    <div id="realTimeTimer" style="display: none; margin-top: 10px;">
+                        <div class="badge bg-success fs-6 me-2" id="elapsedTime">0s</div>
+                        <div class="badge bg-info fs-6" id="remainingTime">Calculating...</div>
+                        <br>
+                        <small class="text-muted">
+                            Speed: <span id="extractionSpeed">0</span> comb/min
+                        </small>
+                    </div>
                 </div>
             </div>
         </div>
@@ -115,6 +123,14 @@
                                 </button>
                             </div>
                         </div>
+                        <div class="row mt-2">
+                            <div class="col-12">
+                                <div class="alert alert-info" id="selectedProductDisplay" style="display: none;">
+                                    <strong>Selected Product:</strong> <span id="selectedProductName">None</span><br>
+                                    <small><strong>URL:</strong> <span id="selectedProductURL">None</span></small>
+                                </div>
+                            </div>
+                        </div>
                         <div class="mt-2">
                             <small class="text-muted">
                                 Showing: <span id="productCount">0</span> products
@@ -154,6 +170,20 @@
                         </div>
 
                         <div class="mt-3">
+                            <div class="row mb-2">
+                                <div class="col-md-6">
+                                    <div class="alert alert-info">
+                                        <strong>Total Combinations:</strong> <span id="totalCombinations">0</span><br>
+                                        <strong>Estimated Time:</strong> <span id="estimatedTime">0 minutes</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="alert alert-warning" id="excludedInfo" style="display: none;">
+                                        <strong>Excluded:</strong> <span id="excludedCount">0</span> combinations<br>
+                                        <strong>Remaining:</strong> <span id="remainingCombinations">0</span>
+                                    </div>
+                                </div>
+                            </div>
                             <button class="btn btn-success" id="startExtractionBtn" disabled>
                                 <i class="fas fa-play"></i> Start Price Extraction
                             </button>
@@ -199,8 +229,53 @@
                                     <button class="btn btn-outline-secondary" id="downloadRawBtn" disabled>
                                         <i class="fas fa-file-csv"></i> Download Raw CSV
                                     </button>
+                                    <button class="btn btn-outline-success" id="openMapperBtn" disabled>
+                                        <i class="fas fa-exchange-alt"></i> Map to Excel Sheet
+                                    </button>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 4: Sheet Mapping -->
+        <div class="row mb-4" id="mappingSection" style="display: none;">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><i class="fas fa-exchange-alt"></i> Step 4: Sheet Mapping</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <h6>Upload Target Sheet</h6>
+                                <div class="mb-3">
+                                    <label for="targetSheetFile" class="form-label">Excel/CSV file to populate:</label>
+                                    <input type="file" class="form-control" id="targetSheetFile" accept=".xlsx,.xls,.csv">
+                                </div>
+                                <button class="btn btn-primary" id="analyzeSheetBtn" disabled>
+                                    <i class="fas fa-search"></i> Analyze Sheets
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Mapping Results</h6>
+                                <div id="mappingResults" style="display: none;">
+                                    <p><strong>Confidence:</strong> <span id="mappingConfidence">0%</span></p>
+                                    <p><strong>Option Mappings:</strong> <span id="optionMappingsCount">0</span></p>
+                                    <p><strong>Quantity Mappings:</strong> <span id="quantityMappingsCount">0</span></p>
+                                    <button class="btn btn-success" id="applyMappingBtn">
+                                        <i class="fas fa-check"></i> Apply Mapping
+                                    </button>
+                                    <button class="btn btn-warning" id="manualMappingBtn">
+                                        <i class="fas fa-edit"></i> Manual Mapping
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="mappingDetails" style="display: none;">
+                            <!-- Mapping details will be populated here -->
                         </div>
                     </div>
                 </div>
@@ -301,6 +376,46 @@
         </div>
     </div>
 
+    <!-- Manual Mapping Modal -->
+    <div class="modal fade" id="manualMappingModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Manual Sheet Mapping</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Extracted CSV Columns</h6>
+                            <div id="extractedColumns" class="border p-3" style="height: 400px; overflow-y: auto;">
+                                <!-- Extracted columns will be populated here -->
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Target Sheet Columns</h6>
+                            <div id="targetColumns" class="border p-3" style="height: 400px; overflow-y: auto;">
+                                <!-- Target columns will be populated here -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <h6>Current Mappings</h6>
+                            <div id="currentMappings" class="border p-3" style="height: 200px; overflow-y: auto;">
+                                <!-- Current mappings will be shown here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="saveManualMappingBtn">Save Mappings</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Initialize Socket.IO
@@ -309,6 +424,13 @@
         // Global variables
         let currentAnalysis = null;
         let currentExtraction = null;
+        let allProducts = [];
+        let filteredProducts = [];
+        let selectedProductIndex = -1;
+        let currentMappingAnalysis = null;
+        let manualMappings = {};
+        let extractionStartTime = null;
+        let realTimeTimerInterval = null;
         
         // Initialize page
         document.addEventListener('DOMContentLoaded', function() {
@@ -340,17 +462,29 @@
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {
+                        // Store products globally
+                        if (searchQuery) {
+                            filteredProducts = data.products;
+                        } else {
+                            allProducts = data.products;
+                            filteredProducts = data.products;
+                        }
+
                         populateProductSelect(data.products);
                         document.getElementById('productCount').textContent = data.products.length;
 
                         if (searchQuery) {
                             document.getElementById('searchInfo').style.display = 'inline';
-                            document.getElementById('totalProducts').textContent = data.total || 'unknown';
+                            document.getElementById('totalProducts').textContent = allProducts.length;
                             addLog(`Found ${data.products.length} products matching "${searchQuery}"`);
                         } else {
                             document.getElementById('searchInfo').style.display = 'none';
                             addLog(`Loaded ${data.total} products from CSV`);
                         }
+
+                        // Reset selection
+                        selectedProductIndex = -1;
+                        updateSelectedProductDisplay();
                     } else {
                         addLog(`Error loading products: ${data.error}`, 'error');
                     }
@@ -385,15 +519,41 @@
         function populateProductSelect(products) {
             const select = document.getElementById('productSelect');
             select.innerHTML = '<option value="">Select a product...</option>';
-            
+
             products.forEach((product, index) => {
                 const option = document.createElement('option');
                 option.value = index;
-                option.textContent = `${product['Product Name']} (${product['URL']})`;
+                option.textContent = `${product['Product Name']}`;
+                option.setAttribute('data-url', product['URL']);
                 select.appendChild(option);
             });
-            
-            document.getElementById('analyzeBtn').disabled = false;
+
+            // Add event listener for selection change
+            select.addEventListener('change', function() {
+                selectedProductIndex = parseInt(this.value);
+                updateSelectedProductDisplay();
+                document.getElementById('analyzeBtn').disabled = this.value === '';
+            });
+
+            document.getElementById('analyzeBtn').disabled = true;
+        }
+
+        // Update selected product display
+        function updateSelectedProductDisplay() {
+            const display = document.getElementById('selectedProductDisplay');
+            const nameSpan = document.getElementById('selectedProductName');
+            const urlSpan = document.getElementById('selectedProductURL');
+
+            if (selectedProductIndex >= 0 && selectedProductIndex < filteredProducts.length) {
+                const product = filteredProducts[selectedProductIndex];
+                nameSpan.textContent = product['Product Name'];
+                urlSpan.textContent = product['URL'];
+                display.style.display = 'block';
+            } else {
+                nameSpan.textContent = 'None';
+                urlSpan.textContent = 'None';
+                display.style.display = 'none';
+            }
         }
         
         // Setup event listeners
@@ -409,30 +569,54 @@
             document.getElementById('addSubOptionConfirmBtn').addEventListener('click', addNewSubOption);
             document.getElementById('downloadFormattedBtn').addEventListener('click', () => downloadFile('formatted'));
             document.getElementById('downloadRawBtn').addEventListener('click', () => downloadFile('raw'));
+            document.getElementById('openMapperBtn').addEventListener('click', openMapper);
+            document.getElementById('analyzeSheetBtn').addEventListener('click', analyzeSheets);
+            document.getElementById('applyMappingBtn').addEventListener('click', applyMapping);
+            document.getElementById('manualMappingBtn').addEventListener('click', showManualMapping);
+            document.getElementById('saveManualMappingBtn').addEventListener('click', saveManualMapping);
+
+            // File input change listener
+            document.getElementById('targetSheetFile').addEventListener('change', function() {
+                document.getElementById('analyzeSheetBtn').disabled = !this.files.length;
+            });
         }
         
         // Analyze selected product
         function analyzeProduct() {
-            const productIndex = document.getElementById('productSelect').value;
-            if (!productIndex) return;
-            
-            addLog(`Starting analysis for product index ${productIndex}`);
+            if (selectedProductIndex < 0 || selectedProductIndex >= filteredProducts.length) {
+                addLog('❌ No product selected', 'error');
+                return;
+            }
+
+            const selectedProduct = filteredProducts[selectedProductIndex];
+            addLog(`🔍 Starting analysis for: ${selectedProduct['Product Name']}`);
+            addLog(`📄 URL: ${selectedProduct['URL']}`);
             showProgress();
-            
-            fetch(`/api/analyze/${productIndex}`)
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        addLog('Analysis started successfully');
-                    } else {
-                        addLog(`Error starting analysis: ${data.error}`, 'error');
-                        hideProgress();
-                    }
+
+            // Send the actual product data instead of just index
+            fetch('/api/analyze/product', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    product_name: selectedProduct['Product Name'],
+                    product_url: selectedProduct['URL']
                 })
-                .catch(error => {
-                    addLog(`Error starting analysis: ${error}`, 'error');
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    addLog('✅ Analysis started successfully');
+                } else {
+                    addLog(`❌ Error starting analysis: ${data.error}`, 'error');
                     hideProgress();
-                });
+                }
+            })
+            .catch(error => {
+                addLog(`❌ Error starting analysis: ${error}`, 'error');
+                hideProgress();
+            });
         }
         
         // Display analysis results
@@ -459,7 +643,10 @@
             
             document.getElementById('analysisSection').style.display = 'block';
             document.getElementById('startExtractionBtn').disabled = !apiTest.success;
-            
+
+            // Update combination count after displaying options
+            setTimeout(() => updateCombinationCount(), 100);
+
             addLog(`Analysis completed: ${Object.keys(analysis.options).length} option categories found`);
             hideProgress();
         }
@@ -484,7 +671,8 @@
                 <div class="d-flex align-items-center mb-1">
                     <span class="badge bg-light text-dark me-2">${value.text} (${value.id})</span>
                     <input type="checkbox" class="form-check-input suboption-exclude me-1"
-                           data-option="${optionName}" data-suboption="${value.id}" data-text="${value.text}">
+                           data-option="${optionName}" data-suboption="${value.id}" data-text="${value.text}"
+                           onchange="handleSubOptionExcludeChange('${optionName}')">
                     <label class="form-check-label me-2" style="font-size: 0.8em;">Exclude</label>
                 </div>
             `).join('');
@@ -496,7 +684,8 @@
                         <button class="btn btn-sm btn-outline-primary me-2" onclick="showAddSubOptionModal('${optionName}')">
                             <i class="fas fa-plus"></i> Add Sub-Option
                         </button>
-                        <input type="checkbox" class="form-check-input option-exclude" data-option="${optionName}">
+                        <input type="checkbox" class="form-check-input option-exclude" data-option="${optionName}"
+                               onchange="handleOptionExcludeChange('${optionName}')">
                         <label class="form-check-label ms-1">Exclude All</label>
                     </div>
                 </div>
@@ -506,6 +695,143 @@
             `;
 
             return card;
+        }
+
+        // Update combination count in real-time
+        function updateCombinationCount() {
+            if (!currentAnalysis || !currentAnalysis.options) {
+                return;
+            }
+
+            let remainingCombinations = 1;
+            let hasValidCombinations = true;
+
+            // Calculate remaining combinations after exclusions
+            Object.entries(currentAnalysis.options).forEach(([optionName, optionValues]) => {
+                const isOptionExcluded = document.querySelector(`input[data-option="${optionName}"].option-exclude`)?.checked;
+
+                let availableSubOptions = 0;
+
+                if (isOptionExcluded) {
+                    // If entire option is excluded, we use only the first/default option (1 choice)
+                    availableSubOptions = 1;
+                } else {
+                    // Count non-excluded sub-options
+                    availableSubOptions = optionValues.length;
+                    const excludedSubOptions = document.querySelectorAll(`input[data-option="${optionName}"].suboption-exclude:checked`);
+                    availableSubOptions -= excludedSubOptions.length;
+                }
+
+                if (availableSubOptions <= 0) {
+                    // If all sub-options are excluded for this option, no combinations possible
+                    hasValidCombinations = false;
+                    return;
+                }
+
+                remainingCombinations *= availableSubOptions;
+            });
+
+            // If any option has no valid sub-options, set to 0
+            if (!hasValidCombinations) {
+                remainingCombinations = 0;
+            }
+
+            const originalTotal = currentAnalysis.total_combinations || 0;
+            const excludedCombinations = originalTotal - remainingCombinations;
+
+            // Update UI
+            document.getElementById('totalCombinations').textContent = originalTotal.toLocaleString();
+            document.getElementById('remainingCombinations').textContent = remainingCombinations.toLocaleString();
+            document.getElementById('excludedCount').textContent = excludedCombinations.toLocaleString();
+
+            // Show/hide excluded info
+            const excludedInfo = document.getElementById('excludedInfo');
+            if (excludedCombinations > 0) {
+                excludedInfo.style.display = 'block';
+            } else {
+                excludedInfo.style.display = 'none';
+            }
+
+            // Update estimated time (more accurate: 1.5 seconds per combination)
+            const estimatedSeconds = remainingCombinations * 1.5;
+            const estimatedMinutes = Math.ceil(estimatedSeconds / 60);
+            document.getElementById('estimatedTime').textContent = estimatedMinutes > 0 ? `${estimatedMinutes} minutes` : '0 minutes';
+
+            // Update extraction button state
+            document.getElementById('startExtractionBtn').disabled = remainingCombinations === 0;
+
+            // Store for real-time timer
+            window.totalCombinationsToExtract = remainingCombinations;
+
+            // Debug logging
+            const optionStates = {};
+            Object.keys(currentAnalysis.options).forEach(optionName => {
+                const isExcluded = document.querySelector(`input[data-option="${optionName}"].option-exclude`)?.checked;
+                const totalSubOptions = currentAnalysis.options[optionName].length;
+                const excludedSubOptions = document.querySelectorAll(`input[data-option="${optionName}"].suboption-exclude:checked`).length;
+                const availableSubOptions = isExcluded ? 1 : (totalSubOptions - excludedSubOptions);
+
+                optionStates[optionName] = {
+                    totalSubOptions,
+                    excludedSubOptions,
+                    availableSubOptions,
+                    isFullyExcluded: isExcluded
+                };
+            });
+
+            console.log('🔢 Combination calculation:', {
+                originalTotal,
+                remainingCombinations,
+                excludedCombinations,
+                optionStates
+            });
+
+            // Add visual feedback in the UI
+            addLog(`📊 Combinations: ${remainingCombinations.toLocaleString()} remaining (${excludedCombinations.toLocaleString()} excluded)`);
+        }
+
+        // Handle option exclude change
+        function handleOptionExcludeChange(optionName) {
+            const optionExcludeCheckbox = document.querySelector(`input[data-option="${optionName}"].option-exclude`);
+            const subOptionCheckboxes = document.querySelectorAll(`input[data-option="${optionName}"].suboption-exclude`);
+
+            if (optionExcludeCheckbox.checked) {
+                // If "Exclude All" is checked, check all sub-options
+                subOptionCheckboxes.forEach(checkbox => {
+                    checkbox.checked = true;
+                    checkbox.disabled = true;
+                });
+            } else {
+                // If "Exclude All" is unchecked, enable all sub-options but don't change their state
+                subOptionCheckboxes.forEach(checkbox => {
+                    checkbox.disabled = false;
+                });
+            }
+
+            updateCombinationCount();
+        }
+
+        // Handle sub-option exclude change
+        function handleSubOptionExcludeChange(optionName) {
+            const optionExcludeCheckbox = document.querySelector(`input[data-option="${optionName}"].option-exclude`);
+            const subOptionCheckboxes = document.querySelectorAll(`input[data-option="${optionName}"].suboption-exclude`);
+            const checkedSubOptions = document.querySelectorAll(`input[data-option="${optionName}"].suboption-exclude:checked`);
+
+            // If all sub-options are checked, check the "Exclude All" option
+            if (checkedSubOptions.length === subOptionCheckboxes.length && subOptionCheckboxes.length > 0) {
+                optionExcludeCheckbox.checked = true;
+                subOptionCheckboxes.forEach(checkbox => {
+                    checkbox.disabled = true;
+                });
+            } else {
+                // If not all sub-options are checked, uncheck "Exclude All"
+                optionExcludeCheckbox.checked = false;
+                subOptionCheckboxes.forEach(checkbox => {
+                    checkbox.disabled = false;
+                });
+            }
+
+            updateCombinationCount();
         }
         
         // Start price extraction
@@ -532,6 +858,9 @@
             // Show pause button, hide start button
             document.getElementById('startExtractionBtn').style.display = 'none';
             document.getElementById('pauseExtractionBtn').style.display = 'inline-block';
+
+            // Initialize extraction timer
+            extractionStartTime = Date.now();
 
             fetch('/api/extract/start', {
                 method: 'POST',
@@ -621,6 +950,7 @@
 
             document.getElementById('downloadFormattedBtn').disabled = false;
             document.getElementById('downloadRawBtn').disabled = false;
+            document.getElementById('openMapperBtn').disabled = false;
 
             document.getElementById('extractionSection').style.display = 'block';
 
@@ -755,12 +1085,19 @@
             if (data.is_paused) {
                 progressBar.className = 'progress-bar bg-warning';
                 progressMessage.textContent = '⏸️ ' + data.message;
+                stopRealTimeTimer();
             } else if (data.current_step === 'completed') {
                 progressBar.className = 'progress-bar bg-success';
                 progressMessage.textContent = '✅ ' + data.message;
+                stopRealTimeTimer();
             } else {
                 progressBar.className = 'progress-bar bg-primary';
                 progressMessage.textContent = data.message;
+
+                // Start real-time timer if extraction is active
+                if (data.current_step === 'extracting' && !data.is_paused) {
+                    startRealTimeTimer(data.progress, data.total);
+                }
             }
 
             progressStats.textContent = `${data.progress.toLocaleString()} / ${data.total.toLocaleString()}`;
@@ -773,6 +1110,85 @@
                 document.getElementById('pauseExtractionBtn').style.display = 'inline-block';
                 document.getElementById('resumeExtractionBtn').style.display = 'none';
             }
+        }
+
+        // Start real-time timer
+        function startRealTimeTimer(currentProgress, totalCombinations) {
+            if (!extractionStartTime) {
+                extractionStartTime = Date.now();
+            }
+
+            document.getElementById('realTimeTimer').style.display = 'block';
+
+            // Clear existing timer
+            if (realTimeTimerInterval) {
+                clearInterval(realTimeTimerInterval);
+            }
+
+            realTimeTimerInterval = setInterval(() => {
+                updateRealTimeTimer(currentProgress, totalCombinations);
+            }, 1000);
+        }
+
+        // Update real-time timer
+        function updateRealTimeTimer(currentProgress, totalCombinations) {
+            const now = Date.now();
+            const elapsedSeconds = (now - extractionStartTime) / 1000;
+            const remainingCombinations = totalCombinations - currentProgress;
+
+            // Format elapsed time
+            let elapsedText;
+            if (elapsedSeconds < 60) {
+                elapsedText = `${Math.floor(elapsedSeconds)}s`;
+            } else if (elapsedSeconds < 3600) {
+                const minutes = Math.floor(elapsedSeconds / 60);
+                const seconds = Math.floor(elapsedSeconds % 60);
+                elapsedText = `${minutes}m ${seconds}s`;
+            } else {
+                const hours = Math.floor(elapsedSeconds / 3600);
+                const minutes = Math.floor((elapsedSeconds % 3600) / 60);
+                elapsedText = `${hours}h ${minutes}m`;
+            }
+            document.getElementById('elapsedTime').textContent = elapsedText;
+
+            if (currentProgress > 0 && elapsedSeconds > 0) {
+                // Calculate actual speed
+                const combinationsPerSecond = currentProgress / elapsedSeconds;
+                const combinationsPerMinute = Math.round(combinationsPerSecond * 60);
+
+                // Calculate remaining time
+                const remainingSeconds = remainingCombinations / combinationsPerSecond;
+
+                // Format remaining time
+                let timeText;
+                if (remainingSeconds < 60) {
+                    timeText = `${Math.ceil(remainingSeconds)}s`;
+                } else if (remainingSeconds < 3600) {
+                    const minutes = Math.floor(remainingSeconds / 60);
+                    const seconds = Math.ceil(remainingSeconds % 60);
+                    timeText = `${minutes}m ${seconds}s`;
+                } else {
+                    const hours = Math.floor(remainingSeconds / 3600);
+                    const minutes = Math.floor((remainingSeconds % 3600) / 60);
+                    timeText = `${hours}h ${minutes}m`;
+                }
+
+                document.getElementById('remainingTime').textContent = timeText;
+                document.getElementById('extractionSpeed').textContent = combinationsPerMinute;
+            } else {
+                document.getElementById('remainingTime').textContent = 'Calculating...';
+                document.getElementById('extractionSpeed').textContent = '0';
+            }
+        }
+
+        // Stop real-time timer
+        function stopRealTimeTimer() {
+            if (realTimeTimerInterval) {
+                clearInterval(realTimeTimerInterval);
+                realTimeTimerInterval = null;
+            }
+            document.getElementById('realTimeTimer').style.display = 'none';
+            extractionStartTime = null;
         }
         
         // Show/hide progress
@@ -799,28 +1215,429 @@
         
         // Show option modification modal
         function showOptionModal() {
-            // Implementation for option modification
+            if (!currentAnalysis || !currentAnalysis.options) {
+                addLog('❌ No analysis data available for modification', 'error');
+                return;
+            }
+
+            const container = document.getElementById('modalOptionsContainer');
+            container.innerHTML = '';
+
+            // Create editable options interface
+            Object.entries(currentAnalysis.options).forEach(([optionName, optionValues]) => {
+                const optionDiv = document.createElement('div');
+                optionDiv.className = 'mb-4 border p-3 rounded';
+
+                optionDiv.innerHTML = `
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h6 class="mb-0">${optionName}</h6>
+                        <button class="btn btn-sm btn-danger" onclick="removeOption('${optionName}')">
+                            <i class="fas fa-trash"></i> Remove Option
+                        </button>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label">Attribute Mapping:</label>
+                        <input type="text" class="form-control form-control-sm"
+                               value="${currentAnalysis.attribute_mappings[optionName] || ''}"
+                               data-option="${optionName}" data-field="attribute">
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label">Sub-Options:</label>
+                        <div class="suboptions-container" data-option="${optionName}">
+                            ${optionValues.map((value, index) => `
+                                <div class="input-group input-group-sm mb-1">
+                                    <input type="text" class="form-control" value="${value.text}"
+                                           data-option="${optionName}" data-index="${index}" data-field="text">
+                                    <input type="text" class="form-control" value="${value.id}"
+                                           data-option="${optionName}" data-index="${index}" data-field="id">
+                                    <button class="btn btn-outline-danger" onclick="removeSubOption('${optionName}', ${index})">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                            `).join('')}
+                        </div>
+                        <button class="btn btn-sm btn-outline-primary mt-1" onclick="addSubOptionInModal('${optionName}')">
+                            <i class="fas fa-plus"></i> Add Sub-Option
+                        </button>
+                    </div>
+                `;
+
+                container.appendChild(optionDiv);
+            });
+
             const modal = new bootstrap.Modal(document.getElementById('optionModal'));
             modal.show();
+        }
+
+        // Remove option from modal
+        function removeOption(optionName) {
+            if (confirm(`Remove option "${optionName}"?`)) {
+                delete currentAnalysis.options[optionName];
+                delete currentAnalysis.attribute_mappings[optionName];
+                showOptionModal(); // Refresh modal
+            }
+        }
+
+        // Remove sub-option from modal
+        function removeSubOption(optionName, index) {
+            if (currentAnalysis.options[optionName]) {
+                currentAnalysis.options[optionName].splice(index, 1);
+                showOptionModal(); // Refresh modal
+            }
+        }
+
+        // Add sub-option in modal
+        function addSubOptionInModal(optionName) {
+            const text = prompt('Enter sub-option text:');
+            const id = prompt('Enter sub-option ID:');
+
+            if (text && id) {
+                if (!currentAnalysis.options[optionName]) {
+                    currentAnalysis.options[optionName] = [];
+                }
+                currentAnalysis.options[optionName].push({
+                    text: text,
+                    id: id
+                });
+                showOptionModal(); // Refresh modal
+            }
         }
         
         // Save modified options
         function saveOptions() {
-            // Implementation for saving modified options
-            addLog('Option modification not yet implemented');
+            if (!currentAnalysis) {
+                addLog('❌ No analysis data to save', 'error');
+                return;
+            }
+
+            // Collect all changes from the modal
+            const updatedOptions = {};
+            const updatedMappings = {};
+
+            // Get all option containers
+            document.querySelectorAll('[data-option]').forEach(element => {
+                const optionName = element.dataset.option;
+                const field = element.dataset.field;
+
+                if (field === 'attribute') {
+                    updatedMappings[optionName] = element.value;
+                } else if (field === 'text' || field === 'id') {
+                    const index = parseInt(element.dataset.index);
+
+                    if (!updatedOptions[optionName]) {
+                        updatedOptions[optionName] = [];
+                    }
+
+                    if (!updatedOptions[optionName][index]) {
+                        updatedOptions[optionName][index] = {};
+                    }
+
+                    updatedOptions[optionName][index][field] = element.value;
+                }
+            });
+
+            // Update current analysis
+            currentAnalysis.options = updatedOptions;
+            currentAnalysis.attribute_mappings = updatedMappings;
+
+            // Send update to backend
+            fetch('/api/analysis/update', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    options: updatedOptions,
+                    attribute_mappings: updatedMappings
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    addLog('✅ Options updated successfully');
+                    currentAnalysis = data.analysis;
+                    displayAnalysisResults(currentAnalysis);
+
+                    // Close modal
+                    bootstrap.Modal.getInstance(document.getElementById('optionModal')).hide();
+                } else {
+                    addLog(`❌ Error updating options: ${data.error}`, 'error');
+                }
+            })
+            .catch(error => {
+                addLog(`❌ Error updating options: ${error}`, 'error');
+            });
         }
         
         // Download file
         function downloadFile(type) {
             if (!currentExtraction) return;
-            
-            const filename = type === 'formatted' ? 
-                currentExtraction.formatted_csv_path : 
+
+            const filename = type === 'formatted' ?
+                currentExtraction.formatted_csv_path :
                 currentExtraction.raw_csv_path;
-            
+
             window.open(`/api/download/${filename}`, '_blank');
             addLog(`Downloaded ${type} CSV file`);
         }
+
+        // Open mapper section
+        function openMapper() {
+            document.getElementById('mappingSection').style.display = 'block';
+            addLog('📊 Sheet mapping section opened');
+        }
+
+        // Analyze sheets for mapping
+        function analyzeSheets() {
+            const targetFile = document.getElementById('targetSheetFile').files[0];
+            if (!targetFile) {
+                addLog('❌ Please select a target sheet file', 'error');
+                return;
+            }
+
+            if (!currentExtraction) {
+                addLog('❌ No extraction data available for mapping', 'error');
+                return;
+            }
+
+            addLog('🔍 Analyzing sheets for intelligent mapping...');
+
+            const formData = new FormData();
+            formData.append('extracted_csv', new Blob([JSON.stringify(currentExtraction)], {type: 'application/json'}));
+            formData.append('target_sheet', targetFile);
+
+            fetch('/api/mapper/analyze', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    currentMappingAnalysis = data.analysis;
+                    displayMappingResults(data.analysis);
+                    addLog('✅ Sheet analysis completed');
+                } else {
+                    addLog(`❌ Error analyzing sheets: ${data.error}`, 'error');
+                }
+            })
+            .catch(error => {
+                addLog(`❌ Error analyzing sheets: ${error}`, 'error');
+            });
+        }
+
+        // Display mapping results
+        function displayMappingResults(analysis) {
+            const confidence = (analysis.mapping_confidence * 100).toFixed(1);
+            const optionCount = Object.keys(analysis.option_mappings || {}).length;
+            const quantityCount = Object.keys(analysis.quantity_mappings || {}).length;
+
+            document.getElementById('mappingConfidence').textContent = `${confidence}%`;
+            document.getElementById('optionMappingsCount').textContent = optionCount;
+            document.getElementById('quantityMappingsCount').textContent = quantityCount;
+
+            document.getElementById('mappingResults').style.display = 'block';
+
+            // Show mapping details
+            const detailsContainer = document.getElementById('mappingDetails');
+            detailsContainer.innerHTML = `
+                <h6>Mapping Details</h6>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h7>Option Mappings:</h7>
+                        <ul class="list-group list-group-flush">
+                            ${Object.entries(analysis.option_mappings || {}).map(([extracted, mapping]) => `
+                                <li class="list-group-item d-flex justify-content-between">
+                                    <span>${extracted}</span>
+                                    <span class="badge bg-primary">${mapping.target_column} (${(mapping.confidence * 100).toFixed(0)}%)</span>
+                                </li>
+                            `).join('')}
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h7>Quantity Mappings:</h7>
+                        <ul class="list-group list-group-flush">
+                            ${Object.entries(analysis.quantity_mappings || {}).map(([extracted, target]) => `
+                                <li class="list-group-item d-flex justify-content-between">
+                                    <span>${extracted}</span>
+                                    <span class="badge bg-success">${target}</span>
+                                </li>
+                            `).join('')}
+                        </ul>
+                    </div>
+                </div>
+            `;
+            detailsContainer.style.display = 'block';
+        }
+
+        // Apply mapping
+        function applyMapping() {
+            if (!currentMappingAnalysis) {
+                addLog('❌ No mapping analysis available', 'error');
+                return;
+            }
+
+            addLog('🔄 Applying mappings and populating target sheet...');
+
+            fetch('/api/mapper/apply', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    extracted_data: currentExtraction,
+                    target_file_name: document.getElementById('targetSheetFile').files[0].name,
+                    mappings: currentMappingAnalysis,
+                    manual_mappings: manualMappings
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    addLog(`✅ Mapping applied successfully! Populated ${data.populated_count} cells`);
+                    addLog(`📄 Download file: ${data.output_file}`);
+                } else {
+                    addLog(`❌ Error applying mapping: ${data.error}`, 'error');
+                }
+            })
+            .catch(error => {
+                addLog(`❌ Error applying mapping: ${error}`, 'error');
+            });
+        }
+
+        // Show manual mapping modal
+        function showManualMapping() {
+            if (!currentMappingAnalysis) {
+                addLog('❌ No mapping analysis available', 'error');
+                return;
+            }
+
+            populateManualMappingModal();
+            const modal = new bootstrap.Modal(document.getElementById('manualMappingModal'));
+            modal.show();
+        }
+
+        // Populate manual mapping modal
+        function populateManualMappingModal() {
+            const extractedContainer = document.getElementById('extractedColumns');
+            const targetContainer = document.getElementById('targetColumns');
+            const mappingsContainer = document.getElementById('currentMappings');
+
+            // Clear containers
+            extractedContainer.innerHTML = '';
+            targetContainer.innerHTML = '';
+            mappingsContainer.innerHTML = '';
+
+            // Populate extracted columns
+            if (currentMappingAnalysis.extracted_analysis) {
+                currentMappingAnalysis.extracted_analysis.columns.forEach(col => {
+                    const div = document.createElement('div');
+                    div.className = 'p-2 border-bottom';
+                    div.innerHTML = `
+                        <div class="d-flex justify-content-between">
+                            <span>${col}</span>
+                            <button class="btn btn-sm btn-outline-primary" onclick="selectExtractedColumn('${col}')">
+                                Select
+                            </button>
+                        </div>
+                    `;
+                    extractedContainer.appendChild(div);
+                });
+            }
+
+            // Populate target columns
+            if (currentMappingAnalysis.target_analysis) {
+                currentMappingAnalysis.target_analysis.columns.forEach(col => {
+                    const div = document.createElement('div');
+                    div.className = 'p-2 border-bottom';
+                    div.innerHTML = `
+                        <div class="d-flex justify-content-between">
+                            <span>${col}</span>
+                            <button class="btn btn-sm btn-outline-success" onclick="selectTargetColumn('${col}')">
+                                Select
+                            </button>
+                        </div>
+                    `;
+                    targetContainer.appendChild(div);
+                });
+            }
+
+            updateMappingsDisplay();
+        }
+
+        let selectedExtracted = null;
+        let selectedTarget = null;
+
+        // Select extracted column
+        function selectExtractedColumn(column) {
+            selectedExtracted = column;
+            addLog(`Selected extracted column: ${column}`);
+
+            if (selectedTarget) {
+                createManualMapping();
+            }
+        }
+
+        // Select target column
+        function selectTargetColumn(column) {
+            selectedTarget = column;
+            addLog(`Selected target column: ${column}`);
+
+            if (selectedExtracted) {
+                createManualMapping();
+            }
+        }
+
+        // Create manual mapping
+        function createManualMapping() {
+            if (selectedExtracted && selectedTarget) {
+                manualMappings[selectedExtracted] = selectedTarget;
+                addLog(`✅ Created mapping: ${selectedExtracted} → ${selectedTarget}`);
+
+                updateMappingsDisplay();
+
+                // Reset selections
+                selectedExtracted = null;
+                selectedTarget = null;
+            }
+        }
+
+        // Update mappings display
+        function updateMappingsDisplay() {
+            const container = document.getElementById('currentMappings');
+            container.innerHTML = '';
+
+            Object.entries(manualMappings).forEach(([extracted, target]) => {
+                const div = document.createElement('div');
+                div.className = 'p-2 border-bottom d-flex justify-content-between align-items-center';
+                div.innerHTML = `
+                    <span>${extracted} → ${target}</span>
+                    <button class="btn btn-sm btn-outline-danger" onclick="removeManualMapping('${extracted}')">
+                        Remove
+                    </button>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        // Remove manual mapping
+        function removeManualMapping(extracted) {
+            delete manualMappings[extracted];
+            updateMappingsDisplay();
+            addLog(`Removed mapping for: ${extracted}`);
+        }
+
+        // Save manual mapping
+        function saveManualMapping() {
+            addLog(`✅ Saved ${Object.keys(manualMappings).length} manual mappings`);
+            bootstrap.Modal.getInstance(document.getElementById('manualMappingModal')).hide();
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProducts();
+            setupEventListeners();
+            setupSearch();
+        });
     </script>
 </body>
 </html>
